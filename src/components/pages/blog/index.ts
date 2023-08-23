@@ -1,3 +1,3 @@
-import Banner from './banner'
+import Blog from './blog'
 
-export default Banner;
+export default Blog;

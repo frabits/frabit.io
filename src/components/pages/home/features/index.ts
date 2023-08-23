@@ -1,3 +1,3 @@
-import Slug from './slug'
+import Features from './features'
 
-export default Slug;
+export default Features;

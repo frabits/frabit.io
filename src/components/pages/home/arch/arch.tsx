@@ -1,6 +1,8 @@
 const Arch = () =>{
     return (
-        <div></div>
+        <div>
+            <p className="text-cyan-50">The frabit arch</p>
+        </div>
     );
 };
 

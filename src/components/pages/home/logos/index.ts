@@ -1,3 +1,3 @@
-import Slug from './slug'
+import Logos from './logos'
 
-export default Slug;
+export default Logos;

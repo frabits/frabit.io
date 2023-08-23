@@ -1,3 +1,3 @@
-import Banner from './banner'
+import Pricing from './pricing'
 
-export default Banner;
+export default Pricing;

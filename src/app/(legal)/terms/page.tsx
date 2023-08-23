@@ -1,6 +1,6 @@
 import getMetadata from '@/utils/get-metadata';
 
-import Link from '@/components/shared/link';
+import a from '@/components/shared/link';
 
 import Route from '@/lib/route';
 import SEO_DATA from '@/lib/seo-data';
@@ -10,14 +10,14 @@ export const metadata = getMetadata(SEO_DATA.TERMS);
 export default function Page() {
     return (
         <>
-            <h1 className="font-title text-90 font-semibold leading-none lg:text-68 md:text-56 sm:text-40">
+            <h1 className="font-title text-cyan-50 text-90 font-semibold leading-none lg:text-68 md:text-56 sm:text-40">
                 Terms of service
             </h1>
-            <p className="text-gray-50 sm:my-3">
-                Last modified: <time>Feb 11, 2022</time>
+            <p className="text-cyan-50 sm:my-3">
+                Last modified: <time>Feb 11, 2023</time>
             </p>
-            <p className="sm:mt-3">
-                This Services Agreement is an agreement between Bytebase (as defined below) and you or the
+            <p className="sm:mt-3 text-cyan-50">
+                This Services Agreement is an agreement between Frabit Labs (as defined below) and you or the
                 entity you represent (&ldquo;you&rdquo; or &ldquo;your&rdquo;), which contains the terms and
                 conditions that govern your use of the Software (as defined below). By clicking &ldquo;I
                 Accept,&rdquo; or by downloading, installing, or otherwise accessing or using the Software,
@@ -26,44 +26,44 @@ export default function Page() {
                 eligible, or do not agree to the terms, then you do not have our permission to download
                 and/or use the Software.
             </p>
-            <h2>1. Definitions</h2>
-            <p>
+            <h2 className="text-cyan-50">1. Definitions</h2>
+            <p className="text-cyan-50">
                 <strong>&quot;Agreement&quot;</strong> means, collectively, the terms and conditions laid
                 out on this page (these &ldquo;Terms&rdquo;), along with any order for Software
                 (&ldquo;Order Form&rdquo;) and all other applicable rules, policies, and procedures that we
                 may publish from time to time on the Site, including but not limited to our{' '}
-                <Link href={Route.PRIVACY}>Privacy Policy</Link>.
+                <a href={Route.PRIVACY}>Privacy Policy</a>.
             </p>
-            <p>
+            <p className="text-cyan-50">
                 <strong>&quot;Content&quot;</strong> means any content made available through the Software,
                 including but not limited to text (including Documentation), data, articles, images,
                 photographs, videos, applications, software
             </p>
-            <p>
+            <p className="text-cyan-50">
                 <strong>&quot;Documentation&quot;</strong> means the documentation regarding the Software
                 that we make available for use at{' '}
-                <Link href={Route.DOCS}>https://www.bytebase.com/docs</Link>.
+                <a href={Route.DOCS}>https://www.frabit.tech/docs</a>.
             </p>
-            <p>
+            <p className="text-cyan-50">
                 <strong>&quot;Instance&quot;</strong> means the self-hosted instance of the Software that
                 you create or use in order to manage Your Database.
             </p>
-            <p>
-                <strong>&quot;Site&quot;</strong> means our website located at bytebase.com, and all
+            <p className="text-cyan-50">
+                <strong>&quot;Site&quot;</strong> means our website located at frabit.tech, and all
                 content, services, and products provided by us at or through the Site (or any subdomain or
                 successor site).
             </p>
-            <p>
+            <p className="text-cyan-50">
                 <strong>&quot;Software&quot;</strong> means, collectively, the software provided by us for
                 download via the Site and for installation on your equipment, including but not limited to
-                the self-hosted Bytebase software and CLI and library.
+                the self-hosted Frabit software and CLI and library.
             </p>
-            <p>
-                <strong>&quot;Bytebase&quot;</strong>, <strong>&quot;we&quot;</strong>, or{' '}
-                <strong>&quot;us&quot;</strong> refers to Bytebase (HongKong) Limited, as well as its
+            <p className="text-cyan-50">
+                <strong>&quot;Frabit&quot;</strong>, <strong>&quot;we&quot;</strong>, or{' '}
+                <strong>&quot;us&quot;</strong> refers to Frabit Labs, as well as its
                 affiliates.
             </p>
-            <p>
+            <p className="text-cyan-50">
                 <strong>&quot;You&quot;</strong> refers to the individual person, company, or organization
                 that has visited or is using the Software, that accesses an Instance, or that directs the
                 use of the Instance. If you&rsquo;re entering into the Agreement on behalf of your company
@@ -72,14 +72,14 @@ export default function Page() {
                 you&rsquo;ve read, understood, and agree to be bound by the Agreement on that company or
                 organization&rsquo;s behalf.
             </p>
-            <p>
+            <p className="text-cyan-50">
                 <strong>&quot;Your Database&quot;</strong> means the database that you manage via the
                 Software.
             </p>
-            <h2>2. Account terms</h2>
-            <h3>2.1 Account Responsibility and Security.</h3>
-            <h4>1. Generally.</h4>
-            <ol type="a">
+            <h2 className="text-cyan-50">2. Account terms</h2>
+            <h3 className="text-cyan-50">2.1 Account Responsibility and Security.</h3>
+            <h4 className="text-cyan-50">1. Generally.</h4>
+            <ol className="text-cyan-50" type="a">
                 <li>
                     To register to use the Software, you must create a username and password and provide us
                     with the information requested in the registration process. You must provide complete and
@@ -97,8 +97,8 @@ export default function Page() {
                     it.
                 </li>
             </ol>
-            <h4>2. Age Limitation.</h4>
-            <ol type="a">
+            <h4 className="text-cyan-50">2. Age Limitation.</h4>
+            <ol className="text-cyan-50" type="a">
                 <li>
                     In order to create an Instance, you must be at least eighteen (18) years old and we do not
                     permit any users under thirteen (13) years old to use our Software for any purpose. If we
@@ -112,27 +112,27 @@ export default function Page() {
                     applicable laws and regulations.
                 </li>
             </ol>
-            <h4>3. Security</h4>
-            <p>
+            <h4 className="text-cyan-50">3. Security</h4>
+            <p className="text-cyan-50">
                 You&rsquo;re responsible for the security of your Instance when using our Software. While we
                 may offer tools to help you maintain your Instance&rsquo;s security, these are not
                 guaranteed to work. You&rsquo;re responsible for all Content posted on your Instance under
                 your user account, even if you didn&rsquo;t post it. We have no liability of any kind for
                 any loss or damage from your failure to secure your Instance.
             </p>
-            <h2>3. Acceptable use</h2>
-            <h3>3.1 License from Us to You.</h3>
-            <p>
+            <h2 className="text-cyan-50">3. Acceptable use</h2>
+            <h3 className="text-cyan-50">3.1 License from Us to You.</h3>
+            <p className="text-cyan-50">
                 The source code for our Software is publicly available at{' '}
-                <Link href="https://github.com/bytebase" target="_blank">
-                    https://github.com/bytebase
-                </Link>
+                <a href="https://github.com/frabits" target="_blank">
+                    https://github.com/frabits
+                </a>
                 . Your rights to access and use that code is covered by the software license in that
                 repository.
             </p>
-            <h3>3.2 Restrictions.</h3>
-            <p>You may not, and may not permit any third-party to:</p>
-            <ol>
+            <h3 className="text-cyan-50">3.2 Restrictions.</h3>
+            <p className="text-cyan-50">You may not, and may not permit any third-party to:</p>
+            <ol className="text-cyan-50">
                 <li>
                     Redistribute, encumber, sell, rent, lease, sublicense, or otherwise transfer rights to all
                     or any part of the Software.
@@ -157,23 +157,23 @@ export default function Page() {
                     most-current release of the Software.
                 </li>
             </ol>
-            <h3>3.3 Ownership; Proprietary Rights.</h3>
-            <p>
-                The Site, and Software are owned and operated by Bytebase. The visual interfaces, graphics,
+            <h3 className="text-cyan-50">3.3 Ownership; Proprietary Rights.</h3>
+            <p className="text-cyan-50">
+                The Site, and Software are owned and operated by Frabit Labs. The visual interfaces, graphics,
                 design, compilation, information, data, computer code (including source code or object
                 code), products, software, services, and all other elements (
-                <strong>&quot;Materials&quot;</strong>) provided by Bytebase are protected by intellectual
-                property and other laws. All Materials are the property of Bytebase or its third party
+                <strong>&quot;Materials&quot;</strong>) provided by Frabit Labs are protected by intellectual
+                property and other laws. All Materials are the property of Frabit Labs or its third party
                 licensors. You acknowledge that the Site, and the Software are protected by copyrights,
                 trademarks, service marks, international treaties, and/or other proprietary rights and laws
                 and that all ownership and intellectual property rights in the Site, and the Software, and
                 all related trade names, service marks, logos, domain names do and shall, as between you and
-                Bytebase, belong exclusively to Bytebase. Except as expressly provided herein, these Terms
+                Frabit Labs, belong exclusively to Frabit Labs. Except as expressly provided herein, these Terms
                 grant you no right, title, license, or interest in any intellectual property owned or
-                licensed by Bytebase, including (but not limited to) the Site, and the Software.
+                licensed by Frabit Labs, including (but not limited to) the Site, and the Software.
             </p>
-            <h3>3.4 Ideas.</h3>
-            <p>
+            <h3 className="text-cyan-50">3.4 Ideas.</h3>
+            <p className="text-cyan-50">
                 You may submit comments or ideas about the Software, such as how to improve it. By
                 submitting a comment or idea, you agree that your disclosure is gratuitous, unsolicited and
                 without restriction and will not place us under any fiduciary or other obligation, and that
@@ -181,8 +181,8 @@ export default function Page() {
                 acceptance of your submission, we do not waive any rights to use similar ideas we already
                 had or obtained from other sources.
             </p>
-            <h3>3.5 Beta Software.</h3>
-            <p>
+            <h3 className="text-cyan-50">3.5 Beta Software.</h3>
+            <p className="text-cyan-50">
                 We may make beta and experimental products, features, and Documentation available to you on
                 an early access basis (<strong>&quot;Beta Software&quot;</strong>). Beta Software is not
                 generally available and may contain bugs, defects, and errors. We provide Beta Software
@@ -190,24 +190,24 @@ export default function Page() {
                 Our service level agreements do not apply to Beta Software. If and when the Beta Software
                 becomes generally available, you will have the option to pay for the software or discontinue
                 its use. We may use your feedback about Beta Software. You acknowledge and agree that
-                Bytebase may engage other third-party service providers to provide services to Bytebase in
+                Frabit Labs may engage other third-party service providers to provide services to Frabit Labs in
                 connection with our provision of the Software.
             </p>
-            <h2>4. Usage data</h2>
-            <p>
+            <h2 className="text-cyan-50">4. Usage data</h2>
+            <p className="text-cyan-50">
                 We may collect data derived from your use of the Software (
                 <strong>&ldquo;Usage Data&rdquo;</strong>). A specific list of Usage Data that we receive
                 from self-hosted instances is always available in our{' '}
-                <Link href={Route.DOCS}>Documentation</Link> and in the site-admin area on your Instance.
+                <a href={Route.DOCS}>Documentation</a> and in the site-admin area on your Instance.
                 You acknowledge and agree that Usage Data is owned solely and exclusively by us, and that we
                 may use it for any legal purpose, including for purposes of operating, analyzing, improving,
                 or marketing our products. If we share or publicly disclose any information constituting or
                 derived from Usage Data (e.g., in marketing materials), we will aggregate or mask that
                 information to avoid identification.
             </p>
-            <h2>5. Data protection</h2>
-            <p>
-                Please read our <Link href={Route.PRIVACY}>Privacy Policy</Link> carefully for details
+            <h2 className="text-cyan-50">5. Data protection</h2>
+            <p className="text-cyan-50">
+                Please read our <a href={Route.PRIVACY}>Privacy Policy</a> carefully for details
                 relating to how we collect, use, and disclose personal information you provide to us in
                 connection with your use of the Software. We have implemented, and the Software contains,
                 commercially reasonable technical and organizational measures designed to secure Your
@@ -220,17 +220,17 @@ export default function Page() {
                 acknowledge that you store sensitive information on your Instance, or provide any sensitive
                 information to us at your own risk.
             </p>
-            <h2>6. Confidentiality</h2>
-            <h3>6.1 Definition.</h3>
-            <p>
+            <h2 className="text-cyan-50">6. Confidentiality</h2>
+            <h3 className="text-cyan-50">6.1 Definition.</h3>
+            <p className="text-cyan-50">
                 <strong>&quot;Confidential Information&quot;</strong> means all non-public information
                 disclosed by us to you, or vice-versa, that is designated by the discloser as confidential
                 or that reasonably should be considered confidential given the nature of the information or
                 circumstances of its disclosure.
             </p>
-            <h3>6.2 Exclusions.</h3>
-            <p>Confidential Information does not include any information that:</p>
-            <ol>
+            <h3 className="text-cyan-50">6.2 Exclusions.</h3>
+            <p className="text-cyan-50"> Confidential Information does not include any information that:</p>
+            <ol className="text-cyan-50">
                 <li>Was or becomes publicly known through no fault of the receiving party.</li>
                 <li>
                     Was rightfully known or becomes rightfully known to the receiving party without
@@ -245,8 +245,8 @@ export default function Page() {
                     party&rsquo;s Confidential Information.
                 </li>
             </ol>
-            <h3>6.3 Restrictions on Use and Disclosure.</h3>
-            <p>
+            <h3 className="text-cyan-50">6.3 Restrictions on Use and Disclosure.</h3>
+            <p className="text-cyan-50">
                 Neither party will use the other party&rsquo;s Confidential Information except as permitted
                 under this Agreement. Each party agrees to maintain in confidence and protect the other
                 party&rsquo;s Confidential Information using at least the same degree of care as it uses for
@@ -265,36 +265,36 @@ export default function Page() {
                 contest the requirement. The restrictions set forth in this Section will survive the
                 termination or expiration of this Agreement.
             </p>
-            <h2>7. Term; Termination</h2>
-            <h3>7.1 Subscription Period.</h3>
-            <p>
+            <h2 className="text-cyan-50">7. Term; Termination</h2>
+            <h3 className="text-cyan-50">7.1 Subscription Period.</h3>
+            <p className="text-cyan-50">
                 Unless otherwise stated in an Order Form, this Agreement starts on the earlier of the date
                 on which you: (a) agree to the terms and conditions of this Agreement; or (b) first set up
                 an Instance and will continue in effect until either you or we terminate it (the
                 <strong>&quot;Subscription Period&quot;</strong>).
             </p>
-            <h3>7.2 Termination for Breach.</h3>
-            <p>
+            <h3 className="text-cyan-50">7.2 Termination for Breach.</h3>
+            <p className="text-cyan-50">
                 If a party fails to cure a material breach of the Agreement within thirty (30) days after
                 receiving written notice of breach, the other party may then terminate the Agreement within
                 the following thirty (30) days. We will refund you any prepaid, unused fees.
             </p>
-            <h3>7.3 Termination for Convenience.</h3>
-            <p>
+            <h3 className="text-cyan-50">7.3 Termination for Convenience.</h3>
+            <p className="text-cyan-50">
                 Either party may terminate this Agreement, for any reason or for no reason, provided that
                 you are responsible for all prepaid fees and fees you commit to in an Order Form. If we
                 terminate the Agreement under this section, we will refund you for all prepaid fees for the
                 remainder of the Subscription Period.
             </p>
-            <h3>7.4 Termination without Notification.</h3>
-            <p>
-                Bytebase reserves the right to immediately suspend your access to or use of the Software or
+            <h3 className="text-cyan-50">7.4 Termination without Notification.</h3>
+            <p className="text-cyan-50">
+                Frabit Labs reserves the right to immediately suspend your access to or use of the Software or
                 terminate this Agreement without notification if:
             </p>
-            <ol type="a">
+            <ol className="text-cyan-50" type="a">
                 <li>
                     We believe that there is a significant threat to the functionality, security, integrity,
-                    or availability of the Software or to Bytebase&rsquo;s other customers.
+                    or availability of the Software or to Frabit Labs&rsquo;s other customers.
                 </li>
                 <li>We believe that you are violating the Agreement.</li>
                 <li>We need to do so to comply with the Law or requests of governmental bodies.</li>
@@ -304,33 +304,33 @@ export default function Page() {
                     bankruptcy, reorganization, liquidation, dissolution or similar proceeding.
                 </li>
             </ol>
-            <h3>7.5 Effect of Termination; Survival.</h3>
-            <p>
+            <h3 className="text-cyan-50">7.5 Effect of Termination; Survival.</h3>
+            <p className="text-cyan-50">
                 Upon termination of this Agreement, you may no longer use the Software, and if any fees were
                 owed prior to termination, you must pay those fees immediately. Any provisions of this
                 Agreement that, by their terms or their nature, should survive the termination of this
                 Agreement shall so survive. For purposes of clarity, your right to use the Software will not
                 survive any termination of this Agreement.
             </p>
-            <h2>8. Fees</h2>
-            <h3>8.1 Pricing.</h3>
-            <p>
+            <h2 className="text-cyan-50">8. Fees</h2>
+            <h3 className="text-cyan-50">8.1 Pricing.</h3>
+            <p className="text-cyan-50">
                 You are responsible for paying any applicable fees as set forth on our{' '}
-                <Link href={Route.PRICING}>Pricing and Payment Terms</Link> or in an Order Form and
+                <a href={Route.PRICING}>Pricing and Payment Terms</a> or in an Order Form and
                 applicable taxes associated with the Software in a timely manner with a valid payment
                 method. Unless otherwise stated in an Order Form, you will pay all invoices within thirty
                 (30) days of receipt. You agree that we may charge for any such fees owed. You are required
                 to keep your billing information current.
             </p>
-            <h3>8.2 Term.</h3>
-            <p>
+            <h3 className="text-cyan-50">8.2 Term.</h3>
+            <p className="text-cyan-50">
                 Authorization to charge your chosen payment method account will remain in effect until you
                 cancel or modify your preference. You agree that charges may be accumulated as incurred and
                 may be submitted as one or more aggregate charges during or at the end of the applicable
                 billing cycle.
             </p>
-            <h3>8.3 Responsibility for Charges.</h3>
-            <p>
+            <h3 className="text-cyan-50">8.3 Responsibility for Charges.</h3>
+            <p className="text-cyan-50">
                 You are responsible for all charges incurred by usage of your Instance (whether made by you
                 or anyone who may use your Instance, such as your co- workers, colleagues, team-members,
                 etc.). If your payment method fails or you are past due on amounts owed, we may collect fees
@@ -338,21 +338,21 @@ export default function Page() {
                 taxes imposed on your use of the Software, including, but not limited to, sales, use, or
                 value-added taxes.
             </p>
-            <h3>8.4 No Refunds.</h3>
-            <p>
+            <h3 className="text-cyan-50">8.4 No Refunds.</h3>
+            <p className="text-cyan-50">
                 All fees and charges are earned upon receipt by us and are nonrefundable unless negotiated
                 otherwise, except (a) as expressly set forth herein, and/or (b) as required by applicable
                 law.
             </p>
-            <h3>8.5 Renewals.</h3>
-            <p>
+            <h3 className="text-cyan-50">8.5 Renewals.</h3>
+            <p className="text-cyan-50">
                 Unless otherwise stated in an Order Form, your subscription will be automatically renew for
                 one (1) year terms at the then-current fees and your credit card account (or other payment
                 method account) will be charged without further authorization from you, absent sixty (60)
                 day written notice of non-renewal prior to the end of your current subscription term.
             </p>
-            <h2>9. Third party services and software</h2>
-            <p>
+            <h2 className="text-cyan-50">9. Third party services and software</h2>
+            <p className="text-cyan-50">
                 We do not share Your Database with third-party services, unless you enable the integration.
                 We make no warranties of any kind with regard to anything that is contained on or accessible
                 through them. Access and use of Third Party Services is solely at your own risk. The
@@ -365,13 +365,13 @@ export default function Page() {
                 the terms applicable to any Third Party Software, and the conflict relates to the use of
                 that Third Party Software, their terms and conditions will govern the conflict.
             </p>
-            <h2>10. No warranties; disclaimer</h2>
-            <p>
+            <h2 className="text-cyan-50">10. No warranties; disclaimer</h2>
+            <p className="text-cyan-50">
                 THE SOFTWARE, AND ANY OTHER SOFTWARE, APPLICATIONS, PRODUCTS, AND SOFTWARE MADE AVAILABLE ON
                 OR IN CONNECTION WITH THE SOFTWARE ARE PROVIDED ON AN &ldquo;AS IS&rdquo; AND &ldquo;AS
                 AVAILABLE&rdquo; BASIS WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR
                 OTHERWISE. WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, TO THE FULLEST EXTENT
-                PERMISSIBLE UNDER APPLICABLE LAW, BYTEBASE DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS,
+                PERMISSIBLE UNDER APPLICABLE LAW, FRABIT LABS DISCLAIMS, ON BEHALF OF ITSELF AND ITS LICENSORS,
                 ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO ANY
                 IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT.
                 FURTHER, WE DO NOT WARRANT THAT THE SOFTWARE OR ANY PART THEREOF (OR YOUR ACCESS THERETO)
@@ -382,8 +382,8 @@ export default function Page() {
                 EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS AS
                 PROVIDED BY LAW.
             </p>
-            <h2>11. Limitation of liability</h2>
-            <p>
+            <h2 className="text-cyan-50">11. Limitation of liability</h2>
+            <p className="text-cyan-50">
                 UNDER NO CIRCUMSTANCES WILL EITHER PARTY (OR ITS AFFILIATES, EMPLOYEES, AGENTS, LICENSORS,
                 SUCCESSORS, OR ASSIGNS) BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL,
                 PUNITIVE, RELIANCE, OR EXEMPLARY DAMAGES (INCLUDING WITHOUT LIMITATION LOSSES OR LIABILITY
@@ -391,7 +391,7 @@ export default function Page() {
                 REPLACEMENT SOFTWARE, OR LOSS OF BUSINESS OPPORTUNITY) THAT RESULT FROM YOUR USE OR YOUR
                 INABILITY TO USE THE SOFTWARE, OR ANY OTHER INTERACTIONS WITH US, HOWEVER CAUSED AND
                 REGARDLESS OF THE THEORY OF LIABILITY OR WHETHER ARISING OUT OF THE USE OF OR INABILITY TO
-                USE SOFTWARE OR OTHERWISE AND EVEN IF WE OR A BYTEBASE-AUTHORIZED REPRESENTATIVE HAS BEEN
+                USE SOFTWARE OR OTHERWISE AND EVEN IF WE OR A FRABIT-LABS-AUTHORIZED REPRESENTATIVE HAS BEEN
                 ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR
                 EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR
                 EXCLUSION MAY NOT APPLY TO YOU. IN SUCH CASES, OUR LIABILITY WILL BE LIMITED TO THE FULLEST
@@ -403,7 +403,7 @@ export default function Page() {
                 PAYABLE BY YOU, IF ANY, FOR THE SOFTWARE DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING
                 THE EVENT THAT GAVE RISE TO THE CLAIM (EXCLUSIVE OF TAX).
             </p>
-            <p>
+            <p className="text-cyan-50">
                 You acknowledge and agree that we have offered our products and services, set our prices,
                 and entered into the Agreement in reliance upon the disclaimers of warranty and the
                 limitations of liability set forth herein, that the disclaimers of warranty and the
@@ -413,14 +413,14 @@ export default function Page() {
                 limitations of liability set forth herein form an essential basis of the bargain between you
                 and us.
             </p>
-            <h2>12. Force Majeure and Exemption of Liability</h2>
-            <h3>
+            <h2 className="text-cyan-50">12. Force Majeure and Exemption of Liability</h2>
+            <h3 className="text-cyan-50">
                 12.1 You understand and agree that, in the process of using the Software, you may encounter
-                the following circumstances that may result in service interruptions. Bytebase will be
+                the following circumstances that may result in service interruptions. Frabit Labs will be
                 exempted from the liability for losses caused to you under any of the following
                 circumstances:
             </h3>
-            <ol type="a">
+            <ol className="text-cyan-50" type="a">
                 <li>
                     Force majeure, including but not limited to natural disasters, government actions,
                     adjustments or promulgation of policies, laws, or regulations, strikes, unrests, and other
@@ -451,12 +451,12 @@ export default function Page() {
                     involving your account, services, or devices issued by the competent authority.
                 </li>
                 <li>
-                    Other circumstances that are not caused by the fault of Bytebase or cannot be controlled
-                    or reasonably foreseen by Bytebase.
+                    Other circumstances that are not caused by the fault of Frabit Labs or cannot be controlled
+                    or reasonably foreseen by Frabit Labs.
                 </li>
             </ol>
-            <h3>12.2</h3>
-            <p>
+            <h3 className="text-cyan-50">12.2</h3>
+            <p className="text-cyan-50">
                 In the event of a force majeure event, the obligations of the parties hereunder shall be
                 suspended within the scope and duration of such force majeure event. Neither party will be
                 held liable for such force majeure event. The party claiming a force majeure event shall, no
@@ -468,11 +468,11 @@ export default function Page() {
                 days and has a material adverse impact on the performance of this Agreement, either party
                 may terminate this Agreement.
             </p>
-            <h3>12.3</h3>
-            <p>In no event shall a force majeure event release you from your payment obligation.</p>
-            <h2>13. Indemnification</h2>
-            <h3>13.1 By You.</h3>
-            <p>
+            <h3 className="text-cyan-50">12.3</h3>
+            <p className="text-cyan-50">In no event shall a force majeure event release you from your payment obligation.</p>
+            <h2 className="text-cyan-50">13. Indemnification</h2>
+            <h3 className="text-cyan-50">13.1 By You.</h3>
+            <p className="text-cyan-50">
                 You agree to defend us and our affiliates, directors, officers, employees, and contractors
                 from and against any third-party claims, proceedings, demands, and investigations and
                 indemnify us for damages, attorney&rsquo;s fees, and costs arising from Your Database or
@@ -482,8 +482,8 @@ export default function Page() {
                 entity, or any other party&rsquo;s access and use of the Software with your unique username,
                 password, or other appropriate security code.
             </p>
-            <h3>13.2 By Bytebase.</h3>
-            <p>
+            <h3 className="text-cyan-50">13.2 By Frabit Labs.</h3>
+            <p className="text-cyan-50">
                 We agree to defend you and your affiliates, directors, officers, employees, and contractors
                 from and against any third-party claims, proceedings, demands, and investigations and
                 indemnify you for damages, attorney&rsquo;s fees, and costs arising from your use of the
@@ -493,8 +493,8 @@ export default function Page() {
                 Agreement, or (c) any modification, combination, or development of the Software not
                 performed by us.
             </p>
-            <h3>13.3 Procedure.</h3>
-            <p>
+            <h3 className="text-cyan-50">13.3 Procedure.</h3>
+            <p className="text-cyan-50">
                 Each party must give the other prompt written notice of any defense or indemnity sought and
                 reasonable cooperation in the defense. The defending party will have sole control of the
                 defense and settlement, provided that neither party may enter into a settlement placing any
@@ -502,20 +502,20 @@ export default function Page() {
                 amount, on the other party without the other party&rsquo;s prior written approval, not to be
                 unreasonably withheld, conditioned, or delayed.
             </p>
-            <h2>14. Modifications</h2>
-            <h3>14.1</h3>
-            <p>
+            <h2 className="text-cyan-50">14. Modifications</h2>
+            <h3 className="text-cyan-50">14.1</h3>
+            <p className="text-cyan-50">
                 We reserve the right to change, modify, or update the Software at any time, to impose
                 additional restrictions or limitations, or to change, modify or update the fees charged for
-                all or a portion of the Software. You agree that Bytebase has no responsibility or liability
+                all or a portion of the Software. You agree that Frabit Labs has no responsibility or liability
                 for the deletion or failure to store any data or other content maintained or transmitted by
-                the Software. Bytebase may decide what features to include in the Software and whether to
-                make them optional or mandatory. You further acknowledge that Bytebase reserves the right to
+                the Software. Frabit Labs may decide what features to include in the Software and whether to
+                make them optional or mandatory. You further acknowledge that Frabit Labs reserves the right to
                 change these general practices and limits at any time, in its sole discretion, with or
                 without notice.
             </p>
-            <h3>14.2</h3>
-            <p>
+            <h3 className="text-cyan-50">14.2</h3>
+            <p className="text-cyan-50">
                 We also reserve the right to update the Agreement (including these Terms) from time to time.
                 When we change the Agreement (including these Terms) in a material manner, we will update
                 the ‘last modified&rsquo; date at the top of this page and notify you that material changes
@@ -526,20 +526,20 @@ export default function Page() {
                 with respect to such Software upon the renewal of your subscription, unless otherwise stated
                 in an Order Form.
             </p>
-            <h2>15. Export Control</h2>
-            <p>
+            <h2 className="text-cyan-50">15. Export Control</h2>
+            <p className="text-cyan-50">
                 Both parties undertake to abide by the export control laws and regulations of the United
                 Nations, China, the United States, and other countries applicable to this Agreement. You
-                undertake not to use the products or services provided by Bytebase for purposes prohibited
+                undertake not to use the products or services provided by Frabit Labs for purposes prohibited
                 by applicable export control laws and regulations, and that, without the permission of the
                 competent authorities, you and other individuals or entities authorized by you to use
-                Bytebase products or services will not provide controlled technologies, software, or
+                Frabit Labs products or services will not provide controlled technologies, software, or
                 services to the entities or individuals prohibited by applicable export control laws and
-                regulations through Bytebase products or services.
+                regulations through Frabit Labs products or services.
             </p>
-            <h2>16. Miscellaneous</h2>
-            <h3>16.1 Governing Law and Jurisdiction.</h3>
-            <p>
+            <h2 className="text-cyan-50">16. Miscellaneous</h2>
+            <h3 className="text-cyan-50">16.1 Governing Law and Jurisdiction.</h3>
+            <p className="text-cyan-50">
                 This Agreement is governed by the laws of the Hong Kong Special Administrative Region
                 without regard to conflicts of law principles. Where any dispute between the parties arises
                 from the content of this Agreement or the implementation hereof, the parties shall try their
@@ -548,67 +548,67 @@ export default function Page() {
                 courts in the Hong Kong Special Administrative Region in any dispute arising out of or
                 relating to this Agreement.
             </p>
-            <h3>16.2 Notices and Electronic Communications.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.2 Notices and Electronic Communications.</h3>
+            <p className="text-cyan-50">
                 Any notice, request, consent, claim, demand, or other communication to be given or delivered
                 to a party under or by reason of a provision of this Agreement shall be in writing in
-                accordance with this Section 16.2. Bytebase may provide you with notice under this Agreement
+                accordance with this Section 16.2. Frabit Labs may provide you with notice under this Agreement
                 by (a) posting a notice on the Site or (b) sending a message to the email address then
                 associated with your account. Notices provided by posting on the Site will be effective upon
-                posting and notices provided by email will be effective when Bytebase sends out the email.
+                posting and notices provided by email will be effective when Frabit Labs sends out the email.
                 You agree that any electronic communication will satisfy any applicable legal communication
                 requirements, including that such communications be in writing. It is your responsibility to
                 keep the email address associated with your account current. You may provide us with notice
                 under this Agreement via email at{' '}
-                <Link href="mailto:support@bytebase.com">support@bytebase.com</Link>.
+                <a href="mailto:support@frabit.io">support@frabit.io</a>.
             </p>
-            <h3>16.3 Waiver.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.3 Waiver.</h3>
+            <p className="text-cyan-50">
                 Our failure to exercise or enforce any right or provision of the Agreement will not
                 constitute a waiver of such right or provision. Any waiver of any provision of the Agreement
                 will be effective only if in writing and signed by us.
             </p>
-            <h3>16.4 Severability.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.4 Severability.</h3>
+            <p className="text-cyan-50">
                 If any provision of the Agreement is held to be unlawful, void, or for any reason
                 unenforceable, then that provision will be limited or eliminated from the Agreement to the
                 minimum extent necessary and will not affect the validity and enforceability of any
                 remaining provisions; except that in the event of unenforceability of the universal Class
                 Action/Jury Trial Waiver, the entire arbitration agreement shall be unenforceable.
             </p>
-            <h3>16.5 Assignment.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.5 Assignment.</h3>
+            <p className="text-cyan-50">
                 The Agreement and any rights and licenses granted hereunder, may not be transferred or
                 assigned by either party without written consent, except in connection with a merger,
                 acquisition, reorganization, or sale of substantially all assets.
             </p>
-            <h3>16.6 Survival.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.6 Survival.</h3>
+            <p className="text-cyan-50">
                 Upon termination of the Agreement, any provision which, by its nature or express terms
                 should survive, shall survive such termination or expiration.
             </p>
-            <h3>16.7 Headings.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.7 Headings.</h3>
+            <p className="text-cyan-50">
                 The heading references herein are for convenience only, do not constitute a part of the
                 Agreement, and will not be deemed to limit or affect any of the provisions here of.
             </p>
-            <h3>16.8 Marketing and Publicity.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.8 Marketing and Publicity.</h3>
+            <p className="text-cyan-50">
                 We may freely refer to your Organization and your relationship with us in connection with
                 publicizing and marketing our products and services, including using your
                 Organization&rsquo;s name and logo to identify your Organization as a customer and using
                 product testimonials and quotes your Organization&rsquo;s representatives may provide to us.
             </p>
-            <h3>16.9 Entire Agreement.</h3>
-            <p>
+            <h3 className="text-cyan-50">16.9 Entire Agreement.</h3>
+            <p className="text-cyan-50">
                 This, including the agreements incorporated by reference, constitutes the entire agreement
                 between you and us relating to the subject matter herein and will not be modified except in
                 writing, signed by both parties, or by a change made by us as set forth in the Agreement.
             </p>
-            <h3>16.10 Disclosures.</h3>
-            <p>
-                The Software is offered by Bytebase (HongKong) Limited and can be reached via email at{' '}
-                <Link href="mailto:support@bytebase.com">support@bytebase.com</Link>.
+            <h3 className="text-cyan-50">16.10 Disclosures.</h3>
+            <p className="text-cyan-50 pb-5">
+                The Software is offered by Frabit Labs Limited and can be reached via email at{' '}
+                <a href="mailto:support@frabit.io">support@frabit.io</a>.
             </p>
         </>
     );

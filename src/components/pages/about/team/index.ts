@@ -1,3 +1,3 @@
-import Banner from './banner'
+import Team from './team'
 
-export default Banner;
+export default Team;

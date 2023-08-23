@@ -1,3 +1,3 @@
-import Features from './features'
+import Benefits from './benefits'
 
-export default Features;
+export default Benefits;

@@ -1,3 +1,3 @@
-import Footer from './footer'
+import { Community } from './community';
 
-export default Footer;
+export default Community;

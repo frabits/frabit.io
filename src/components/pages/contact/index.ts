@@ -1,3 +1,3 @@
-import Banner from './banner'
+import Contact from './contact'
 
-export default Banner;
+export default Contact;

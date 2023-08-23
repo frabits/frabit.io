@@ -1,7 +1,9 @@
-const Features = () =>{
+const Benefits = () =>{
     return (
-        <div></div>
+        <div>
+            <p className="text-cyan-50">The frabit benefits</p>
+        </div>
     );
 };
 
-export default Features;
+export default Benefits;

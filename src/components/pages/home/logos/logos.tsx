@@ -1,7 +1,9 @@
-const Slug = () =>{
+const Logos = () =>{
     return (
-        <div></div>
+        <div>
+            <p className="text-cyan-50">Frabit customer use case</p>
+        </div>
     );
 };
 
-export default Slug;
+export default Logos;

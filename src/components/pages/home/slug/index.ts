@@ -1,3 +1,3 @@
-import Banner from './banner'
+import Slug from './slug'
 
-export default Banner;
+export default Slug;

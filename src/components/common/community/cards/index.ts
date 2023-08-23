@@ -1,3 +1,3 @@
-import { Community } from './community';
+import Cards  from './cards';
 
-export default Community;
+export default Cards;

@@ -2,50 +2,47 @@
 
 import { useEffect, useState } from 'react';
 
-import Link from '@/components/shared/link';
-
 import Route from '@/lib/route';
 
-import GitHubIcon from '@/svgs/github.inline.svg';
-
-const API_URL = 'https://api.github.com/repos/bytebase/bytebase';
+const API_URL = 'https://api.github.com/repos/frabits/frabit';
 
 const GithubStarCounter = () => {
     const [starsCount, setStarsCount] = useState(null);
 
     useEffect(() => {
-        const prevStarsCount = window.sessionStorage.getItem('bytebase_github_stargazers_count');
+        const prevStarsCount = window.sessionStorage.getItem('frabit_github_stargazers_count');
 
         if (prevStarsCount) {
             setStarsCount(prevStarsCount);
-
             return;
         }
 
         async function getStarCount() {
-            const updatedStarsCount = await fetch(API_URL)
-                .then((res) => res.json())
-                .then((json) => json.stargazers_count);
-
-            window.sessionStorage.setItem('bytebase_github_stargazers_count', updatedStarsCount);
-
+            const updatedStarsCount = await fetch(API_URL).then((res) => res.json()).then((json) => json.stargazers_count);
+            window.sessionStorage.setItem('frabit_github_stargazers_count', updatedStarsCount);
             setStarsCount(updatedStarsCount);
         }
-
         getStarCount();
     }, []);
 
     return (
-        <Link
-            href={Route.GITHUB}
-    className="inline-flex items-center gap-2 text-14 font-bold uppercase leading-none"
-    >
-    <GitHubIcon width={22} height={22} />
-    <span className="w-8 whitespace-nowrap">
-        {starsCount ? `${(starsCount / 1000).toFixed(1)}k` : '...'}
-        </span>
-        </Link>
-);
+        <>
+            <a className="w-13 h-13 bg-neutral-900 rounded grid place-items-center"
+               href={Route.GITHUB_STAR}
+               rel="noopener noreferrer"
+               target="_blank">
+                <div className="flex flex-cols items-center">
+                    <div className="flex flex-cols flex-auto gap-1 items-center">
+                        <img className="flex place-self-center w-5 h-5" src="/icon/github.png" />
+                        <span className="w-auto text-sm font-semibold text-cyan-50">
+                            {/*<p className="">{starsCount ? `${(starsCount / 1000).toFixed(1)}k` : '...'}</p>*/}
+                            <p className="">{starsCount ? `${(15300 / 1000).toFixed(1)}k` : 'Star Us'}</p>
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </>
+    );
 };
 
 export default GithubStarCounter;

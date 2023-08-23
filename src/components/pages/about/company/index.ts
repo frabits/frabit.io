@@ -1,3 +1,3 @@
-import Team from './team'
+import Company from './company'
 
-export default Team;
+export default Company;

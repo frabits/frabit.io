@@ -1,3 +1,3 @@
-import Header from './header'
+import Link from './link'
 
-export default Header;
+export default Link;
