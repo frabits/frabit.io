@@ -14,7 +14,7 @@ const SEO_DATA = {
         pathname: `${Route.ABOUT}/`,
     },
     PRICING: {
-        title: 'Frabit Pricing',
+        title: 'Frabit Support',
         description:
             'Database schema migration and version control, Database CI/CD, and DevOps for developers and DBAs',
         pathname: `${Route.PRICING}/`,

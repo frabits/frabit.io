@@ -11,9 +11,9 @@ export default function Home() {
         <Slug />
 
         <Features />
+        <Arch />
           {/*
         <Logos />
-        <Arch />
         <Benefits />
         <Community />
         */}

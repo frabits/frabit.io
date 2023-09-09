@@ -5,8 +5,8 @@ import ExternalIcon from "@/assets/external.inline.svg";
 
 const plan = [
     { name: 'Frabit Community', useCase: 'Small teams', price:'Free', href: '#'},
-    { name: 'Frabit Enterprise', useCase: 'Frabit cloud version that fully ', href: '#'},
-    { name: 'Frabit Cloud', useCase: 'The next-gen database automatic operation platform', href: '#'},
+    { name: 'Frabit Enterprise', useCase: 'Frabit cloud version that fully ',price:'Free', href: '#'},
+    { name: 'Frabit Cloud', useCase: 'The next-gen database automatic operation platform',price:'Free', href: '#'},
 ]
 
 const feature = [
@@ -21,11 +21,6 @@ const feature = [
             { name: 'MongoDB', enabled:true },
             { name: 'Redis', enabled:true },
             { name: 'Redshift', enabled:true},
-            { name: 'ClickHouse', enabled:true },
-            { name: 'TiDB', enabled:true },
-            { name: 'OceanBase', enabled:true },
-            { name: 'Google Spanner', enabled:true },
-            { name: 'MariaDB', enabled:true},
         ],
     }
 ];

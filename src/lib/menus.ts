@@ -82,6 +82,7 @@ export const MENU = {
             name: 'Company',
             items: [
                 { name: 'About', linkUrl: Route.ABOUT },
+                { name: 'Support', linkUrl: Route.SUPPORT },
                 { name: 'Careers', linkUrl: Route.CAREERS },
                 { name: 'Pricing', linkUrl: Route.PRICING },
                 { name: 'Contact', linkUrl: Route.CONTACTS },

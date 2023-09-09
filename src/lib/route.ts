@@ -6,6 +6,7 @@ const Route = {
     DOCS: '/docs',
     BLOG: '/blog',
     CONTACTS: '/contacts',
+    FEATURES: '/features',
     RELEASE_NOTES: '/release-notes',
 
     // Support database
@@ -16,6 +17,7 @@ const Route = {
 
     // Resources
     DOWNLOADS: '/downloads',
+    SUPPORT: '/support',
     FRABIT_OSS: '/frabit-community',
     FRABIT: '/frabit-enterprise',
 
@@ -38,10 +40,12 @@ const Route = {
     GITHUB_STAR: 'https://github.com/frabits/frabit',
     Discussions: 'https://github.com/frabits/frabit/discussions',
     Issues :'https://github.com/frabits/frabit/issues',
+    Release :'https://github.com/frabits/frabit/releases',
     LINKEDIN: 'https://www.linkedin.com/company/frabit',
     SLACK: 'https://frabits.slack.com',
     CLOUD: 'https://cloud.frabit.tech',
     DOCKERHUB: 'https://hub.docker.com/u/frabit',
+    YOUTUBE: 'https://www.youtube.com/channel/UCXKAEcpAE909Xuc6T9V7-kw',
 
 
 };

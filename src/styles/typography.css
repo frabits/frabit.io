@@ -1,0 +1,177 @@
+@layer components {
+    .content {
+    > * {
+&:first-child {
+     @apply mt-0;
+
+&.hint-block {
+     @apply mt-6 xl:mt-[26px] md:mt-[22px] sm:mt-2.5;
+ }
+}
+
+&:last-child {
+     @apply mb-0;
+ }
+}
+
+@apply leading-normal xl:text-16 md:leading-snug;
+
+@apply prose-headings:mt-11 prose-headings:mb-5 prose-headings:font-semibold prose-headings:text-gray-15 prose-p:my-5 prose-p:text-gray-15 prose-a:break-words prose-a:font-semibold prose-a:text-primary-1 prose-a:no-underline prose-a:transition-colors prose-a:duration-200 hover:prose-a:text-gray-60 prose-ul:my-5 prose-li:text-gray-15 xl:prose-headings:mt-10 xl:prose-headings:mb-4 xl:prose-p:my-4 md:prose-headings:mt-9 sm:prose-headings:mt-6 sm:prose-headings:leading-tight sm:prose-p:my-3;
+
+> * {
+&:first-child {
+     @apply mt-0;
+ }
+
+&:last-child {
+     @apply mb-0;
+ }
+}
+
+/* this fixes the fixed width video embeds in docs */
+iframe {
+    @apply max-w-full;
+}
+
+blockquote {
+    @apply my-11 border-l-0 pl-0 text-36 font-semibold not-italic leading-tight tracking-tight lg:my-10 lg:text-30 lg:tracking-normal md:my-9 md:text-24 sm:my-8 sm:text-20 sm:leading-snug;
+
+& p {
+&:first-of-type {
+     @apply mt-0;
+ }
+&:last-child {
+     @apply mb-0;
+ }
+
+&::before,
+&::after {
+     @apply hidden;
+ }
+}
+}
+
+figure {
+    @apply my-11 xl:my-10 md:my-9 sm:my-6;
+}
+
+.table-wrapper {
+    @apply overflow-x-auto;
+}
+
+table {
+    @apply w-full min-w-[716px] border border-gray-90 text-14 2xl:min-w-[654px] xl:min-w-[696px] md:min-w-[500px];
+
+a {
+    @apply font-normal;
+}
+
+th {
+    @apply border border-gray-90 bg-gray-97 px-4 py-3 leading-normal;
+}
+
+td {
+    @apply border border-gray-90 px-4 py-3 leading-normal;
+}
+}
+
+pre {
+    @apply rounded-sm !bg-gray-15 text-14;
+
+code {
+    text-shadow: unset !important;
+
+    @apply highlighted-code !font-mono !text-white sm:break-words;
+}
+}
+
+:not(pre) > code {
+    @apply rounded-md bg-gray-97 px-1.5 py-0.5 font-mono text-14 text-gray-15 sm:break-words;
+
+&::before,
+&::after {
+     @apply hidden;
+ }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+> code {
+    @apply rounded-md bg-gray-97 px-1.5 py-0.5 font-mono text-gray-15;
+    font-size: inherit;
+
+&::before,
+&::after {
+     @apply hidden;
+ }
+}
+}
+
+li {
+    @apply pl-0;
+
+&::marker {
+     @apply font-semibold text-primary-1;
+ }
+}
+}
+
+.content-sm {
+    @apply text-16 md:leading-normal;
+
+& h2,
+& h3 {
+      @apply mt-9 mb-4 text-24 leading-tight lg:mt-6 lg:mb-3 lg:text-20 md:mt-5 md:mb-2 md:text-18;
+  }
+
+& ul,
+& ol {
+      @apply my-4 flex flex-col gap-y-3 pl-4 xl:my-3 lg:gap-y-2 md:my-2 sm:pl-3;
+  }
+
+& li {
+      @apply my-0 xl:my-0;
+  }
+}
+
+.content-legal {
+    @apply text-18 leading-normal lg:text-16 lg:leading-snug sm:text-14;
+    @apply prose-headings:mt-16 prose-headings:leading-tight lg:prose-headings:mt-14 md:prose-headings:mt-12 sm:prose-headings:mt-10;
+
+& h2 {
+      @apply md:text-24 sm:text-20;
+
+& + h3 {
+      @apply my-5 lg:my-4;
+  }
+}
+& h3 {
+      @apply mt-11 text-24 lg:mt-10 lg:text-20 md:mt-9 sm:mt-8 sm:text-18;
+
+& + h4 {
+      @apply my-5 lg:my-4;
+  }
+}
+
+& h4 {
+      @apply mt-9 text-20 leading-snug lg:mt-7 lg:text-18 md:mt-6 sm:mt-5 sm:text-16;
+  }
+
+ol {
+    @apply pl-[39px] lg:pl-9 md:pl-[33px] sm:pl-[25px];
+}
+ul {
+    @apply lg:pl-[30px] sm:pl-[22px];
+}
+
+& li {
+&::marker {
+     @apply text-gray-15;
+ }
+}
+}
+}

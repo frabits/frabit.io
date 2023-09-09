@@ -27,6 +27,11 @@ const socialAddrs = [
         href: Route.LINKEDIN,
         icon: '/icon/linkedin.png',
     },
+    {
+        name: 'Youtube',
+        href: Route.YOUTUBE,
+        icon: '/icon/youtube.png',
+    },
 ];
 const Footer = () => (
     <footer className="bg-zinc-900  pt-3">
@@ -94,7 +99,7 @@ const Footer = () => (
             {/** copyrights */}
             <div className="flex items-center gap-x-9">
                 <p className="whitespace-nowrap text-14 font-medium leading-none tracking-tight text-cyan-50 xs:col-span-full xs:row-span-1 xs:row-start-4 xs:block">
-                    Copyright © {new Date().getFullYear()} Frabit Labs.
+                    Copyright © {new Date().getFullYear()} Frabit Labs. All rights reserved.
                 </p>
             </div>
             {/** Social Links */}

@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .container {
+    @apply mx-auto w-full max-w-[1568px] px-12 xl:px-11 md:px-7 sm:px-4;
+  }
+
+  .gap-x-grid {
+    @apply gap-x-10 xl:gap-x-6 md:gap-x-5 sm:gap-x-4;
+  }
+}

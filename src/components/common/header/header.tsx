@@ -8,11 +8,11 @@ import GithubStarCounter from './star-us';
 
 const products = [
     { name: 'Frabit Cloud', description: 'Frabit cloud version that fully managed without deployment locally', href:Route.CLOUD , icon: CloudIcon },
-    { name: 'Frabit Platform', description: 'The next-gen database automatic operation platform', href: '#', icon: SquaresPlusIcon },
+    { name: 'Frabit Platform', description: 'The next-gen database automatic platform', href: '#', icon: SquaresPlusIcon },
 ]
 
 const callsToAction = [
-    { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
+    { name: 'Watch demo', href: Route.YOUTUBE, icon: PlayCircleIcon },
     { name: 'Contact sales', href: Route.CONTACTS, icon: PhoneIcon },
 ]
 
@@ -85,15 +85,14 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                             </Popover.Panel>
                         </Transition>
                     </Popover>
-
-                    <a href="#" className="text-sm font-semibold leading-6 text-cyan-50">
-                        Features
-                    </a>
                     <a href={Route.DOCS} className="text-sm font-semibold leading-6 text-cyan-50">
                         Docs
                     </a>
-                    <a href={Route.PRICING} className="text-sm font-semibold leading-6 text-cyan-50">
-                        Pricing
+                    <a href={Route.SUPPORT} className="text-sm font-semibold leading-6 text-cyan-50">
+                            Support
+                    </a>
+                    <a href={Route.DOWNLOADS} className="text-sm font-semibold leading-6 text-cyan-50">
+                        Downloads
                     </a>
                     <a href={Route.CONTACTS} className="text-sm font-semibold leading-6 text-cyan-50">
                         Contact Us
