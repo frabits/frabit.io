@@ -28,9 +28,9 @@ const featuresSuper = [
     { name: '7*24*365 Support', enabled:true },
 ];
 const plan = [
-    { name: 'Development', useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: '#',notice:'Quick start'},
-    { name: 'Production', useCase: 'Designed to handle production workloads',price:'$100', feature:featuresPro,href: '#',notice:'Contact us'},
-    { name: 'Dedicated', useCase: 'Designed for the most demanding latency-sensitive workloads',price:'customer', feature:featuresSuper,href: '#',notice:'Contact us'},
+    { name: 'Community', useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: '#',notice:'Quick start'},
+    { name: 'Enterprise', useCase: 'Designed to handle production workloads',price:'$100', feature:featuresPro,href: '#',notice:'Contact us'},
+    { name: 'Customer', useCase: 'Designed for the most demanding latency-sensitive workloads',price:'customer', feature:featuresSuper,href: '#',notice:'Contact us'},
 ]
 
 const Pricing = () =>{
@@ -58,8 +58,8 @@ const Pricing = () =>{
                                     ))}
                                 </div>
                                 <div className="h-10">
-                                    <a className="flex bg-cyan-500 hover:bg-cyan-600 items-center rounded-xl p-2" href={href}>
-                                        <button >
+                                    <a className="flex justify-center bg-cyan-500 hover:bg-cyan-600 rounded-xl p-2" href={href}>
+                                        <button className="flex items-center">
                                             <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
                                         </button>
                                     </a>
