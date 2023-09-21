@@ -69,18 +69,19 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                         </div>
                         <div className="flex grid grid-cols place-items-center gap-2">
                             {Download.Linux.map(({format,arch}, idx) => (
-                                <div className="flex place-items-center col-span-1 gap-3" key={idx}>
-                                    <h3 className="text-14 font-bold leading-none tracking-wider text-cyan-50">{format}</h3>
+                                <div className="flex place-items-center col-span-1 gap-3 rounded-2xl w-200 bg-zinc-800" key={idx}>
+                                    <div className="flex flex-rows gap-20">
+                                        <h3 className="text-14 font-bold leading-none tracking-wider text-cyan-50">{format}</h3>
+                                    </div>
                                     <div className="flex flex-rows gap-20">
                                         {arch.map(({name,pkg},idx)=>(
                                         <div className="flex col-span-1 gap-3" key={idx}>
-                                            <div className="gap-3">
+                                            <div className="gap-3 p-2">
                                                 {pkg.map(({comp,href},idx) =>(
-                                                    <div className="border-2 border-double border-cyan-500 gap-3" key={idx}>
+                                                    <div className="rounded-lg border-2 border-double border-cyan-500 p-2 gap-3" key={idx}>
                                                         <a className="gap-3" href={href}>{comp}-{name}</a>
                                                     </div>
                                                 ))}
-
                                             </div>
                                         </div>
                                     ))}
@@ -96,14 +97,14 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                         </div>
                         <div className="flex grid grid-cols place-items-center gap-2">
                             {Download.MacOS.map(({format,arch}, idx) => (
-                                <div className="flex place-items-center col-span-1 gap-3" key={idx}>
+                                <div className="flex place-items-center col-span-1 gap-3 rounded-2xl w-200 bg-zinc-800" key={idx}>
                                     <h3 className="place-items-center text-14 font-bold leading-none tracking-wider text-cyan-50">{format}</h3>
                                     <div className="flex flex-rows gap-20">
                                         {arch.map(({name,pkg},idx)=>(
                                             <div className="flex col-span-1 gap-3" key={idx}>
-                                                <div className="gap-3">
+                                                <div className="gap-3 p-2">
                                                     {pkg.map(({comp,href},idx) =>(
-                                                        <div className="border-2 h-15 border-double border-cyan-500 gap-3" key={idx}>
+                                                        <div className="rounded-lg  border-2 h-15 border-double border-cyan-500 p-2 gap-3" key={idx}>
                                                             <a className="gap-3" href={href}>{comp}-{name}</a>
                                                         </div>
                                                     ))}

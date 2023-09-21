@@ -38,19 +38,39 @@ const Support = () =>{
                     <div className="flex justify-center relative text-cyan-50 space-x-6 pt-8 pb-6">
                         Here at Frabit Labs, best-in-class support comes with your Cloud subscription. Our Support Services team follows the same vision as our product, bringing you unparalleled performance, ease of use, and exceptionally fast, high-quality results.
                     </div>
-                    <div className="grid grid-cols-2 gap-10 justify-items-center">
-                        <div className="flex flex-rows-2 rounded-2xl bg-zinc-700 place-items-center p-5 w-full text-cyan-50 w-60 h-40">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="flex flex-row-1 w-24 h-24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" fill="#06b6d4"/>
-                            </svg>
-                            <span className="justify-items-center">New support case via</span>
-                        </div>
-                        <div className="rounded-2xl bg-zinc-700 flex place-items-center p-5 w-full text-cyan-50 w-60 h-40">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-24 h-24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" fill="#06b6d4"/>
-                            </svg>
-                            <span>Email support</span>
-                        </div>
+                    <div className="grid grid-cols-2 gap-10  justify-items-center">
+                        <a className="rounded-2xl bg-zinc-700 justify-items-center p-5 w-full text-cyan-50 w-60 h-40"
+                           href="#"
+                           target="_blank"
+                        >
+                            <div className="flex flex-col justify-between items-center">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-20 h-20">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" fill="#06b6d4"/>
+                                    </svg>
+                                </div>
+                                <div className="grid grid-rows-2">
+                                    <span className="justify-items-center">New support case via</span>
+                                    <span className="text-cyan-500">Frabit Cloud</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a className="rounded-2xl bg-zinc-700 p-5 w-full text-cyan-50 w-60 h-40"
+                           href="mailto:support@frabit.io"
+                           target="_blank"
+                        >
+                            <div className="flex flex-col justify-between items-center">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-20 h-20">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" fill="#06b6d4"/>
+                                    </svg>
+                                </div>
+                                <div className="grid grid-rows-2">
+                                    <span className="">Email us at</span>
+                                    <span className="text-cyan-500">support@frabit.io</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div className="">

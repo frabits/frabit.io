@@ -43,7 +43,8 @@ const Route = {
     Release :'https://github.com/frabits/frabit/releases',
     LINKEDIN: 'https://www.linkedin.com/company/frabit',
     SLACK: 'https://frabits.slack.com',
-    CLOUD: 'https://cloud.frabit.tech',
+    CLOUD_SIGNIN: 'https://cloud.frabit.tech/signin',
+    CLOUD_SIGNUP: 'https://cloud.frabit.tech/signup',
     DOCKERHUB: 'https://hub.docker.com/u/frabit',
     YOUTUBE: 'https://www.youtube.com/channel/UCXKAEcpAE909Xuc6T9V7-kw',
 

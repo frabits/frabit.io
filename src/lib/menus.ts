@@ -52,7 +52,7 @@ export const MENU = {
         {
             name: 'Products',
             items: [
-                { name: 'Frabit Cloud', linkUrl: Route.CLOUD },
+                { name: 'Frabit Cloud', linkUrl: Route.CLOUD_SIGNIN },
                 { name: 'Frabit Enterprise', linkUrl: Route.FRABIT },
                 { name: 'Frabit Community', linkUrl: Route.FRABIT_OSS },
             ],

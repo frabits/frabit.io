@@ -60,7 +60,7 @@ const  Downloads = () => {
                 <span className="text-cyan-60 text-3xl font-bold">Latest Release</span>
                 <Release version={version} releaseDate={createAt}/>
                 <div className="h-10 border-double border-cyan-500 hover:border-cyan-600 rounded-lg text-cyan-50">
-                    If you need another version?
+                    If you need another older version?
                     <a className="text-cyan-500 hover:text-cyan-600"
                        target="blank"
                        href={Route.Release}

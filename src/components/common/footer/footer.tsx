@@ -1,5 +1,6 @@
 import Link from '@/components/common/link';
 
+import Image from 'next/image'
 import { MENU } from '@/lib/menus';
 import Route from '@/lib/route';
 
@@ -113,7 +114,7 @@ const Footer = () => (
                            target="_blank">
                             <div className="flex items-stretch bg-zinc-900 rounded-md">
                                 <span className="sr-only items-center text-cyan-50">{name}</span>
-                                <img className="flex place-self-center hover:bg-zinc-800" src={Icon} />
+                                <Image className="flex place-self-center hover:bg-zinc-800" width={32} height={32} src={Icon} />
                             </div>
                         </a>
                     ))}

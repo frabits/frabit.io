@@ -1,4 +1,3 @@
-
 import Support from '@/components/pages/support/support';
 import Community from '@/components/common/community';
 
