@@ -28,9 +28,9 @@ const featuresSuper = [
     { name: '7*24*365 Support', enabled:true },
 ];
 const plan = [
-    { name: 'Community', useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: '#',notice:'Quick start'},
-    { name: 'Enterprise', useCase: 'Designed to handle production workloads',price:'$100', feature:featuresPro,href: '#',notice:'Contact us'},
-    { name: 'Customer', useCase: 'Designed for the most demanding latency-sensitive workloads',price:'customer', feature:featuresSuper,href: '#',notice:'Contact us'},
+    { name: 'Community', useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: Route.DOWNLOADS,notice:'Download now'},
+    { name: 'Enterprise', useCase: 'Designed to handle production workloads',price:'$100', feature:featuresPro,href: Route.CONTACTS,notice:'Contact us'},
+    { name: 'Customer', useCase: 'Designed for the most demanding latency-sensitive workloads',price:'customer', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
 ]
 
 const Pricing = () =>{
