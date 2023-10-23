@@ -6,7 +6,7 @@ const PricingPage = () => {
         <>
             <h1 className="sr-only">Support Center</h1>
             <Support />
-            <Community />
+            <Community/>
         </>
     );
 };

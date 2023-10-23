@@ -9,7 +9,7 @@ import Cards from './cards';
 const Community = () => {
 
     return (
-        <div></div>
+        <></>
     );
 };
 

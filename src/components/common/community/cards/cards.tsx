@@ -100,13 +100,13 @@ const Card = ({name, description, href,  action, }: {
 const Cards = () => {
     return (
         <ul className="gap-x-grid mt-[68px] grid grid-cols-3 pb-[80px] 3xl:mt-[39px] 3xl:pb-[76px] xl:mt-[49px] xl:pb-10 md:mt-9 sm:mt-0 sm:grid-cols-none sm:gap-4 sm:pb-0">
-            {socials.map(({ name, description, href, action }) => (
-                <li key={name} className="sm:col-span-full">
+            {socials.map((social) => (
+                <li key={social.name} className="sm:col-span-full">
                     <Card
-                        name={name as keyof typeof icon}
-                        description={description}
-                        href={href}
-                        action={action}
+                        name={social.name as keyof typeof icon}
+                        description={social.description}
+                        href={social.href}
+                        action={social.action}
                     />
                 </li>
             ))}
