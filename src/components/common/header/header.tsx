@@ -16,16 +16,13 @@ const callsToAction = [
     { name: 'Contact sales', href: Route.CONTACTS, icon: PhoneIcon },
 ]
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
 
 const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
         <>
-        <header className="bg-zinc-900 scrolled">
+        <header className="scrolled bg-gradient-to-r from-cyan-900 to-zinc-800">
             <nav className="mx-auto flex items-center justify-between flex-cols-3 max-w-7xl  p-1" aria-label="Global">
                 <div className="flex">
                     <a href="/" className="-m-1.5 p-1.5">
@@ -35,8 +32,8 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                 </div>
                 <div className="flex">
                     <Popover.Group className="hidden lg:flex lg:gap-x-12">
-                    <Popover className="relative bg-zinc-900">
-                        <Popover.Button className="flex items-center bg-zinc-800 gap-x-1 text-sm font-semibold leading-6 text-cyan-50">
+                    <Popover className="relative ">
+                        <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-cyan-50">
                             Products
                             <ChevronDownIcon className="h-5 w-5 flex-none text-cyan-50" aria-hidden="true" />
                         </Popover.Button>
@@ -50,7 +47,7 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                             leaveFrom="opacity-100 translate-y-0"
                             leaveTo="opacity-0 translate-y-1"
                         >
-                            <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl border border-cyan-500 bg-zinc-900 shadow-lg ring-1 ring-cyan-500">
+                            <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl border border-cyan-500 shadow-lg ring-1 ring-cyan-500">
                                 <div className="p-4">
                                     {products.map((item) => (
                                         <div

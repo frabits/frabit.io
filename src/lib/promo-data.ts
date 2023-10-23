@@ -1,4 +1,3 @@
-
 const PROMO_DATA = {
     TOP_BANNER:{
         title: 'Frabit release a version',

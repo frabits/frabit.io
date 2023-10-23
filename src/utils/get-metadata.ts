@@ -16,7 +16,7 @@ export default function getMetadata({
     const SITE_URL = process.env.NEXT_PUBLIC_DEFAULT_SITE_URL;
     const canonicalUrl = SITE_URL + pathname;
     const imageUrl = imagePath.startsWith('http') ? imagePath : SITE_URL + imagePath;
-    const siteName = 'Bytebase';
+    const siteName = 'Frabit platform';
 
     return {
         title,

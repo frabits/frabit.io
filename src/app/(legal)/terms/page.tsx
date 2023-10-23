@@ -1,7 +1,5 @@
 import getMetadata from '@/utils/get-metadata';
 
-import a from '@/components/shared/link';
-
 import Route from '@/lib/route';
 import SEO_DATA from '@/lib/seo-data';
 

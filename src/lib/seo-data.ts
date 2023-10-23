@@ -13,6 +13,12 @@ const SEO_DATA = {
             'Database schema migration and version control, Database CI/CD, and DevOps for developers and DBAs',
         pathname: `${Route.ABOUT}/`,
     },
+    DOWNLOADS: {
+        title: 'Downloads',
+        description:
+            'Database schema migration and version control, Database CI/CD, and DevOps for developers and DBAs',
+        pathname: `${Route.DOWNLOADS}/`,
+    },
     PRICING: {
         title: 'Frabit Support',
         description:

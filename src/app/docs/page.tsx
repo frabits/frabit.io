@@ -5,7 +5,7 @@ export default async function BlogPage() {
 
     return (
         <>
-            <h1 className="sr-only">Frabit blog</h1>
+            <h1 className="sr-only">Frabit docs</h1>
             <Blog />
         </>
     );

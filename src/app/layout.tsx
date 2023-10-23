@@ -23,7 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en" className='dark h-full'>
       <body>
-        <div className='relative bg-zinc-800 flex min-h-screen flex-col'>
+      {/*bg-gradient-to-r bg-zinc-800 bg-cyan-500*/}
+        <div className='relative bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 flex min-h-screen flex-col'>
           <Header />
           <main className=''>{children}</main>
           <Footer />

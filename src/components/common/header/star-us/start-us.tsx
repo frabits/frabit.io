@@ -7,7 +7,7 @@ import Route from '@/lib/route';
 const API_URL = 'https://api.github.com/repos/frabits/frabit';
 
 const GithubStarCounter = () => {
-    const [starsCount, setStarsCount] = useState(null);
+    const [starsCount, setStarsCount] = useState("");
 
     useEffect(() => {
         const prevStarsCount = window.sessionStorage.getItem('frabit_github_stargazers_count');
@@ -27,7 +27,7 @@ const GithubStarCounter = () => {
 
     return (
         <>
-            <a className="w-13 h-13 bg-neutral-900 rounded grid place-items-center"
+            <a className="w-13 h-13  rounded grid place-items-center"
                href={Route.GITHUB_STAR}
                rel="noopener noreferrer"
                target="_blank">

@@ -1,5 +1,3 @@
-import Link from 'next/Link'
-
 const Positions = [
     {
         name: 'Backend /Golang Senior Software Enginee',

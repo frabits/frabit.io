@@ -4,7 +4,7 @@ const people = [
     {
         name: 'Blylei Zhang',
         role: 'Co-Founder / CEO',
-        imageUrl: '/images/page/about/junyi.webp',
+        imageUrl: '/images/page/about/jieze.png',
         personSocial:[
             {name:'github',icon:'/icon/github.png',href:"https://github.com/blylei"},
             {name:'linkedin',icon:'/icon/linkedin.png',href:"https://www.linkedin.com/in/blylei"},
@@ -14,7 +14,7 @@ const people = [
     {
         name: 'Jieze Zhang',
         role: 'Co-Founder / CFO',
-        imageUrl: '/images/page/about/steven.webp',
+        imageUrl: '/images/page/about/lisa_li.png',
         personSocial:[
             {name:'linkedin',icon:'/icon/linkedin.png',href:"https://www.linkedin.com/in/blylei"},
             {name:'twitter',icon:'/icon/twitter.png',href:'https://twitter.com/frabit_io'},
@@ -23,7 +23,7 @@ const people = [
     {
         name: 'Peter Ning',
         role: 'Co-Founder / CTO',
-        imageUrl: '/images/page/about/zipeng.webp',
+        imageUrl: '/images/page/about/nana.png',
         personSocial:[
             {name:'github',icon:'/icon/github.png',href:"https://github.com/blylei"},
             {name:'linkedin',icon:'/icon/linkedin.png',href:"https://www.linkedin.com/in/blylei"},
@@ -33,7 +33,7 @@ const people = [
     {
         name: 'Lisa Li',
         role: 'Co-Founder / COO',
-        imageUrl: '/images/page/about/ningjing.webp',
+        imageUrl: '/images/page/about/lisa_li.png',
         personSocial:[
             {name:'twitter',icon:'/icon/twitter.png',href:'https://twitter.com/frabit_io'},
             {name:'linkedin',icon:'/icon/linkedin.png',href:"https://www.linkedin.com/in/blylei"},
@@ -42,7 +42,7 @@ const people = [
     {
         name: 'Aila Chen',
         role: 'Co-Founder / CPO',
-        imageUrl: '/images/page/about/mila.webp',
+        imageUrl: '/images/page/about/nana.png',
         personSocial:[
             {name:'linkedin',icon:'/icon/linkedin.png',href:"https://www.linkedin.com/in/blylei"},
             {name:'twitter',icon:'/icon/twitter.png',href:'https://twitter.com/frabit_io'},
@@ -51,7 +51,7 @@ const people = [
     {
         name: 'New Staff',
         role: 'Staff',
-        imageUrl: '/images/page/about/ji.webp',
+        imageUrl: '/images/page/about/lisa_li.png',
         personSocial:[
         ],
     },

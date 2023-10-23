@@ -5,37 +5,40 @@ import { MENU } from '@/lib/menus';
 import Route from '@/lib/route';
 
 
-import ExternalIcon from '@/assets/external.inline.svg';
-
+import githubIcon from '@/assets/social/github.inline.svg';
+import twitterIcon from '@/assets/social/twitter.inline.svg';
+import linkedinIcon from '@/assets/social/linkedin.inline.svg';
+import slackIcon from '@/assets/social/slack.inline.svg';
+import youtubeIcon from '@/assets/social/youtube.inline.svg';
 const socialAddrs = [
     {
         name: 'Github',
         href: Route.GITHUB,
-        icon: '/icon/github.png',
+        icon: githubIcon,
     },
     {
         name: 'SLACK',
         href: Route.SLACK,
-        icon: '/icon/slack.png',
+        icon: slackIcon,
     },
     {
         name: 'Twitter',
         href: Route.TWITTER,
-        icon: '/icon/twitter.png',
+        icon: twitterIcon,
     },
     {
         name: 'Linkedin',
         href: Route.LINKEDIN,
-        icon: '/icon/linkedin.png',
+        icon: linkedinIcon,
     },
     {
         name: 'Youtube',
         href: Route.YOUTUBE,
-        icon: '/icon/youtube.png',
+        icon: youtubeIcon,
     },
 ];
 const Footer = () => (
-    <footer className="bg-zinc-900  pt-3">
+    <footer className="pt-3 bg-gradient-to-r from-cyan-900 to-zinc-800">
         <div className="grid grid-cols-7  pl-20 pr-20 sm:gap-y-14">
             {MENU.footer.map(({ name, items }, idx) => (
                 <div className="col-span-1" key={idx}>
@@ -51,9 +54,6 @@ const Footer = () => (
                                     target={isExternal ? 'blank' : undefined}
                                 >
                                     <span className="text-slate-400 hover:text-slate-300">{childName}</span>
-                                    {isExternal && (
-                                        <ExternalIcon className="ml-3 h-4 w-4 shrink-0 stroke-gray-15 group-hover:stroke-primary-1" />
-                                    )}
                                 </Link>
                             </li>
                         ))}
@@ -76,9 +76,9 @@ const Footer = () => (
                     <div>
                         <div className="row-span-1">
                             <div className="relative flex items-center pt-1 pb-1 w-full h-full">
-                                <form className="flex items-center pl-1 pr-1 rounded-md h-full w-full bg-zinc-800">
+                                <form className="flex items-center pl-1 pr-1 rounded-md h-full w-full">
                                     <div className="w-full">
-                                        <input className="bg-zinc-800 rounded-lg border-dotted border-1 pl-5 pr-5 h-10 w-full" type="email" placeholder="your@domain.com" />
+                                        <input className="rounded-lg border-dotted border-1 pl-5 pr-5 h-10 w-full" type="email" placeholder="your@domain.com" />
                                     </div>
                                     <button className="rounded-lg p3 h-9 bg-cyan-500 hover:bg-cyan-600">
                                         <span className="w-full text-cyan-50 p-3">Subscribe</span>
@@ -107,14 +107,14 @@ const Footer = () => (
             <div className="flex justify-between row-span-1 w-full h-full">
                 <div className="mx-auto flex items-stretch gap-10">
                     {socialAddrs.map(({ name, href, icon: Icon }, idx) => (
-                        <a className="w-10 h-10 bg-neutral-900 hover:bg-neutral-800 rounded grid place-items-center border border-neutral-700/80"
+                        <a className="w-10 h-10 rounded grid place-items-center border border-neutral-700/80"
                            key={idx}
                            href={href}
                            rel="noopener noreferrer"
                            target="_blank">
-                            <div className="flex items-stretch bg-zinc-900 rounded-md">
+                            <div className="flex items-stretch bg-cyan-700 rounded-md">
                                 <span className="sr-only items-center text-cyan-50">{name}</span>
-                                <Image className="flex place-self-center hover:bg-zinc-800" width={32} height={32} src={Icon} />
+                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={32} height={32} src={Icon} />
                             </div>
                         </a>
                     ))}
