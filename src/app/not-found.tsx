@@ -3,7 +3,7 @@ import Route from '@/lib/route';
 export default function NotFound() {
     return (
         <>
-            <main className="grid min-h-full place-items-center bg-zinc-800 px-6 py-24 sm:py-32 lg:px-8">
+            <main className="grid min-h-full place-items-center bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 px-6 py-24 sm:py-32 lg:px-8">
                 <div className="text-center p-10">
                     <p className="text-base font-semibold text-cyan-50">404</p>
                     <h1 className="mt-4 text-3xl font-bold tracking-tight text-cyan-50 sm:text-5xl">Page not found</h1>

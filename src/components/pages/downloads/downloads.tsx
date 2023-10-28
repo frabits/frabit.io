@@ -48,7 +48,7 @@ const  Downloads = () => {
                 Currently, we provide support for Linux and MacOS(aka Darwin) platform,include amd64 and arm64 arch.
             </p>
         </div>
-        <div className="col-span-1 rounded-3xl bg-zinc-700 grid place-items-center p-5 w-full text-cyan-50">
+        <div className="col-span-1 rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid place-items-center p-5 w-full text-cyan-50">
             <span className="text-cyan-60 text-3xl font-bold">Latest Release</span>
             <Release version={latestVersion.tag_name} releaseDate={latestVersion.create_at}/>
             <div className="h-10 border-double border-cyan-500 hover:border-cyan-600 rounded-lg text-cyan-50">
@@ -59,13 +59,13 @@ const  Downloads = () => {
                 > just click here</a>
             </div>
         </div>
-        <div className="col-span-1 rounded-3xl bg-zinc-700 grid place-items-center p-5 w-full text-cyan-50 p-3">
+        <div className="col-span-1 rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid place-items-center p-5 w-full text-cyan-50 p-3">
             <span className="text-cyan-60 text-3xl font-bold">Build from source code</span>
 
             <p className="mt-2 text-lg leading-8 text-cyan-50">
                 Directly <a className="text-cyan-500 hover:text-cyan-600" href={Route.GITHUB_STAR}>Visit</a> or clone our codebase from github with below command:
             </p>
-            <div className="bg-zinc-800 rounded-xl h-15 p-4 flex place-items-start gap-3">
+            <div className="bg-gradient-to-r from-cyan-800 to-cyan-800 rounded-xl h-15 p-4 flex place-items-start gap-3">
                 <span>$ {githubClone}</span>
                 <CopyToClipboard text={githubClone}>
                     <button className="w-8 h-8 rounded hover:scale-125">

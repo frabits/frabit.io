@@ -1,3 +1,3 @@
-import Banner from './banner'
+import Docs from './docs'
 
-export default Banner;
+export default Docs;

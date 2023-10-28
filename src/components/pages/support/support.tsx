@@ -39,7 +39,7 @@ const Support = () =>{
                         Here at Frabit Labs, best-in-class support comes with your Cloud subscription. Our Support Services team follows the same vision as our product, bringing you unparalleled performance, ease of use, and exceptionally fast, high-quality results.
                     </div>
                     <div className="grid grid-cols-2 gap-10  justify-items-center">
-                        <a className="rounded-2xl bg-zinc-700 justify-items-center p-5 w-full text-cyan-50 w-60 h-40"
+                        <a className="rounded-2xl bg-gradient-to-r from-cyan-900 to-cyan-900 justify-items-center p-5 w-full text-cyan-50 w-60 h-40"
                            href="#"
                            target="_blank"
                         >
@@ -55,7 +55,7 @@ const Support = () =>{
                                 </div>
                             </div>
                         </a>
-                        <a className="rounded-2xl bg-zinc-700 p-5 w-full text-cyan-50 w-60 h-40"
+                        <a className="rounded-2xl bg-gradient-to-r from-cyan-900 to-cyan-900 p-5 w-full text-cyan-50 w-60 h-40"
                            href="mailto:support@frabit.io"
                            target="_blank"
                         >

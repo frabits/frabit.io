@@ -5,7 +5,7 @@ const Join = () => {
     return (
         <>
         <div className="py-14">
-            <div className="mx-auto grid max-w-7xl rounded-3xl bg-zinc-700 text-center items-center p-5">
+            <div className="mx-auto grid max-w-7xl rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 text-center items-center p-5">
                 <h2 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Join our Team</h2>
                 <p className="mt-6 text-lg leading-8 text-cyan-50 pr-20 pl-20">
                     We are always on the lookout for passionate and talented individuals. If you are excited about the prospect of working on cutting-edge technology and shaping the future of orchestration, we would love to hear from you
