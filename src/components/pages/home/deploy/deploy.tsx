@@ -1,7 +1,9 @@
+//"use server"
 import Image from "next/image";
 import Route from '@/lib/route';
 import React from "react";
 import {CloudArrowUpIcon, LockClosedIcon, ServerIcon} from "@heroicons/react/20/solid";
+
 
 const deploy_method = [
     {
@@ -38,7 +40,7 @@ function classNames(...classes) {
 const Deploy = () =>{
     return (
         <>
-            <div className="w-full gap-sm-grid items-center group pt-20 ">
+            <div className="w-full gap-sm-grid items-center group">
                 <div className="p-10 text-center flex flex-col items-center">
                     <h1 className="text-cyan-50 text-4xl font-bold font-large pb-10 ">Choose the version of Frabit that’s best for you</h1>
                     <p className="mx-auto max-w-screen-sm text-center leading-normal text-neutral-200">Unlike traditional closed-source OLAP databases, ClickHouse runs on every environment, whether it’s on your machine or in the cloud.</p>
@@ -46,7 +48,8 @@ const Deploy = () =>{
                 <div className="plans_container grid grid-cols-3 gap-10 pb-20 pr-40 pl-40">
                     {deploy_method.map((method, idx) => (
                         <div className="col-span-1 border-2 rounded-2xl border-cyan-500 p-5" key={idx}>
-                            <div className="h-25 p-5 bg-cyan-500 invisible ">
+                            <div className="h-25 p-5 bg-cyan-500 invisible">
+
                             </div>
                             <div className="h-40 p-3 border-cyan-500">
                                 <h2 className="w-full h-10 text-2xl text-center font-bold tracking-wider text-cyan-50">{method.name}</h2>

@@ -20,24 +20,41 @@ function classNames(...classes) {
 
 const Release_API='https://api.github.com/repos/frabits/frabit/releases/latest';
 
+async function getData() {
+    const res = await fetch('https://api.example.com/...')
+    // The return value is *not* serialized
+    // You can return Date, Map, Set, etc.
+
+    if (!res.ok) {
+        // This will activate the closest `error.js` Error Boundary
+        throw new Error('Failed to fetch data')
+    }
+
+    return res.json()
+}
+
 const  Downloads = () => {
-    const [latestVersion, setLatestVersion] = useState({tag_name:"v1.0.0",create_at:"2023-08-24T16:34:03Z"});
+    const [latestVersion, setLatestVersion] = useState({tag_name:"v1.0.0",create_date:"2023-08-24T16:34:03Z"});
     const githubClone = "git clone https://github.com/frabits/frabit.git"
     useEffect(() => {
         const prevVersion = window.sessionStorage.getItem('frabit_github_latest_version');
+        const prevDate = window.sessionStorage.getItem('frabit_github_latest_create_date');
 
 
-        if (prevVersion) {
-            setLatestVersion({tag_name:"v1.0.0",create_at:"2023-08-24T16:34:03Z"});
+        if (prevVersion && prevDate ) {
+            setLatestVersion({tag_name:prevVersion,create_date:prevDate});
             return;
         }
 
         async function getReleaseVersion() {
-            const latestVersion = await fetch(Release_API).then((res) => res.json()).then((json) => json.name);
-            window.sessionStorage.setItem('frabit_github_latest_version', "");
-            setLatestVersion(latestVersion);
+            // const latestVersion = await fetch(Release_API).then((res) => res.json()).then((json) => json.name);
+            const Release = await fetch(Release_API).then((res) => res.json());
+            console.log(Release)
+            window.sessionStorage.setItem('frabit_github_latest_version', Release.name);
+            window.sessionStorage.setItem('frabit_github_latest_create_date', Release.created_at);
+            setLatestVersion({tag_name:Release.name,create_date:Release.created_at});
         }
-        //getReleaseVersion();
+        getReleaseVersion();
     }, []);
 
     return (
@@ -50,7 +67,7 @@ const  Downloads = () => {
         </div>
         <div className="col-span-1 rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid place-items-center p-5 w-full text-cyan-50">
             <span className="text-cyan-60 text-3xl font-bold">Latest Release</span>
-            <Release version={latestVersion.tag_name} releaseDate={latestVersion.create_at}/>
+            <Release version={latestVersion.tag_name} releaseDate={latestVersion.create_date}/>
             <div className="h-10 border-double border-cyan-500 hover:border-cyan-600 rounded-lg text-cyan-50">
                 If you need another older version?
                 <a className="text-cyan-500 hover:text-cyan-600"

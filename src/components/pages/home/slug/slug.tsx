@@ -39,14 +39,6 @@ const Slug = () =>{
                 />
             </div>
             </div>
-            <div className="w-full ">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1440 150" stroke-width="1.5" stroke="currentColor" className="w-full">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M-35 0L693.808 86.1145C714.198 88.5237 734.801 88.5093 755.187 86.0717L1475 0V360H-35V0Z" fill="#06b6d4"/>
-                </svg>
-                <div className="bg-cyan-500 text-center text-base w-full h-20">
-                    <p className="mb-4 text-3xl text-cyan-50">Project status: beta</p>
-                </div>
-            </div>
         </>
     );
 };

@@ -82,13 +82,16 @@ const Support = () =>{
                             <p className="mb-4 text-cyan-50">
                                 Please note that only Subscription customers have a Service Level Agreement on support incidents. If you are not currently a Frabit Cloud customer – while we will try to answer your question, we’d encourage you to go instead to our community resources:
                             </p>
-                            <a className="flex flex-items-center" href={Route.SLACK} target="_blank">
-                                <p className="flex flex-row mb-4 font-bold text-cyan-50">Frabit community Slack channel
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"/>
-                                    </svg>
-                                </p>
-                            </a>
+                            <div className="grid justify-items-center">
+                                <a className="flex justify-items-center flex-items-center" href={Route.SLACK} target="_blank">
+                                    <p className="flex flex-row justify-items-center mb-4 font-bold text-cyan-50">Frabit community Slack channel
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </p>
+                                </a>
+                            </div>
+
                         </div>
 
                     </div>
