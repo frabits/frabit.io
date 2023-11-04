@@ -18,8 +18,9 @@ const Route = {
     // Resources
     DOWNLOADS: '/downloads',
     SUPPORT: '/support',
-    FRABIT_OSS: '/frabit-community',
-    FRABIT: '/frabit-enterprise',
+    FRABIT_OSS: '/community',
+    FRABIT: '/enterprise',
+    CLOUD: '/cloud',
 
     // Integrations
     INTE_GITHUB: '/github',

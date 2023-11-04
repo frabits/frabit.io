@@ -2,7 +2,7 @@ import Route from '@/lib/route';
 
 const SEO_DATA = {
     INDEX: {
-        title: 'Database automatic | Platform | Frabit',
+        title: 'Database automatic | Community | Frabit',
         description:
             'Database schema migration and version control, Database CI/CD, and DevOps for developers and DBAs',
         pathname: '',
