@@ -21,7 +21,7 @@ const questions = [
     {
         question: 'Why should I use Frabit vs. X platform?',
         answer:
-            'Frabit is a unified platform for most well-known database, it fit for DBAs/DBREs and developers.While another platform may be cover some database'
+            'Frabit is a unified platform for most well-known database, it fit for DBAs/DBREs and developers.While another platform may be just cover some database'
     },
     {
         question: 'How much does Frabit cost?',
