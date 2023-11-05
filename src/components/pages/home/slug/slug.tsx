@@ -9,7 +9,7 @@ const Slug = () =>{
         <>
             <div className="container gap-sm-grid items-center group pt-20 grid grid-cols-2">
                 <div className="col-start-1 items-center p-20">
-                <div className="pb-10">
+                    <div className="pb-10">
                     <h1 className="text-cyan-50 text-4xl font-bold font-large">Frabit Platform</h1>
                     <p className="text-cyan-50 text-2xl pt-5">The next-gen database automatic platform</p>
                 </div>
@@ -30,14 +30,14 @@ const Slug = () =>{
                 </div>
             </div>
                 <div className="col-start-2 rounded-3xl text-4xl items-center ">
-                <Image
-                    src='/images/page/main/illustration.svg'
-                    alt=""
-                    width={20}
-                    height={20}
-                    className="dark:bg-slate-800 p-3 md:w-full sm:-mt-2.5"
-                />
-            </div>
+                    <Image
+                        src='/images/page/main/illustration.svg'
+                        alt=""
+                        width={20}
+                        height={20}
+                        className="dark:bg-slate-800 p-3 md:w-full sm:-mt-2.5"
+                    />
+                </div>
             </div>
         </>
     );
