@@ -4,14 +4,14 @@ import { ChevronUpIcon } from '@heroicons/react/20/solid'
 
 const questions = [
     {
-        question: 'What is database as a service,aka DBaas?',
+        question: 'What is database as a service,aka DBaaS?',
         answer:
             'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.'
     },
     {
         question: 'Do you offer technical support?',
         answer:
-            'Yeah,'
+            'Yeah,just visit our Support center for more information'
     },
     {
         question: 'What is your refund policy?',
@@ -21,7 +21,7 @@ const questions = [
     {
         question: 'Why should I use Frabit vs. X platform?',
         answer:
-            'If you are unhappy with your purchase for any reason, email us within 90 days and we will refund you in full, no questions asked.'
+            'Frabit is a unified platform for most well-known database, it fit for DBAs/DBREs and developers.While another platform may be cover some database'
     },
     {
         question: 'How much does Frabit cost?',
@@ -47,7 +47,7 @@ const Faq = () =>{
                     <div className="col-span-1 rounded-2xl pl-72 pr-72 p-5" key={idx}>
                         <Disclosure>
                             {({ open }) => (
-                                <>
+                                <div className="border-2 border-cyan-800 rounded-lg">
                                     <Disclosure.Button className="flex w-full justify-between rounded-lg bg-cyan-800 px-4 py-2 text-left text-sm font-medium text-cyan-50 hover:bg-cyan-600 focus:outline-none focus-visible:ring focus-visible:ring-purple-500/75">
                                         <span>{idx+1} | {question}</span>
                                         <ChevronUpIcon
@@ -56,10 +56,10 @@ const Faq = () =>{
                                             } h-5 w-5 text-cyan-50`}
                                         />
                                     </Disclosure.Button>
-                                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-cyan-50">
                                         {answer}
                                     </Disclosure.Panel>
-                                </>
+                                </div>
                             )}
                         </Disclosure>
                     </div>
