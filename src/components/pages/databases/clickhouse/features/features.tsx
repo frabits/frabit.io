@@ -59,7 +59,7 @@ const Features = () =>{
                                     <div className="flex flex-cols-2 justify-between rounded-2xl pb-2 ">
                                         <span className="flex text-cyan-50 text-30 font-bold font-large">{idx+1}. {name}</span>
                                         <div className="bg-cyan-800">
-                                            <CheckIcon  className={classNames=(enable ? "text-cyan-50" : "text-cyan-90", "flex h-5 w-5")} />
+                                            <CheckIcon  className={classNames(enable ? "text-cyan-50" : "text-cyan-90", "flex h-5 w-5")} />
                                         </div>
                                     </div>
                                 </div>
