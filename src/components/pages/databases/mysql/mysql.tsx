@@ -2,77 +2,38 @@ import {CloudArrowUpIcon, LockClosedIcon, ServerIcon} from "@heroicons/react/20/
 import Route from "@/lib/route";
 import React from "react";
 
-const arch = [
-    {
-        name: 'Support most well-known database',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-        icon: CloudArrowUpIcon,
-        href: Route.DOWNLOADS,
-        tips: "Download now"
-    },
-    {
-        name: 'Provide most function',
-        description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-        icon: LockClosedIcon,
-        href: Route.CONTACTS,
-        tips: "Request a demo"
-    },
-    {
-        name: 'API-first design',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
-        href: Route.CLOUD_SIGNIN,
-        tips: "Create free account"
-    },
-    {
-        name: 'Integrated with exist workflow',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
-        href: Route.CLOUD_SIGNIN,
-        tips: "Create free account"
-    },
-    {
-        name: 'API-first design',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
-        href: Route.CLOUD_SIGNIN,
-        tips: "Create free account"
-    },
-    {
-        name: 'Rich plugin ecosystem',
-        description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-        icon: ServerIcon,
-        href: Route.CLOUD_SIGNIN,
-        tips: "Create free account"
-    },
-];
+import Highlights from "@/components/pages/databases/mysql/highlights";
+import Features from "@/components/pages/databases/mysql/features";
+import Faq from "@/components/pages/databases/mysql/faq";
 
 const Mysql = () =>{
     return (
         <div className="w-full p-8 ">
-            <p className="text-cyan-50 text-4xl text-center">
-                One platform fit most
-                <span className="break-after-left tilted tilted-yellow pl-3 pr-3">
-                    <span className="bg-cyan-500 pl-3 pr-3">well-known</span>
-                </span>
-                databases
-            </p>
-            <div className="">
-                <img></img>
-            </div>
-            <div className="plans_container grid grid-cols-3 gap-10 p-20">
-                {arch.map((method, idx) => (
-                    <div className="col-span-1 border-2 rounded-2xl border-cyan-500 p-5" key={idx}>
-                        <div className="pb-10">
-                            <h2 className="w-full h-10 text-2xl text-center font-bold tracking-wider text-cyan-50 p-2">{method.name}</h2>
-                        </div>
-                        <div className="w-full h-40 p-3 border-cyan-500">
-                            <div className="w-full text-14 text-center tracking-wider text-slate-300">{method.description}</div>
-                        </div>
+            <div className="container gap-sm-grid items-center group pt-20 grid grid-cols-2">
+                <div className="col-start-1 items-center p-10">
+                    <div className="">
+                        <h1 className="text-cyan-50 text-4xl font-bold font-large">MySQL</h1>
+                        <p className="text-cyan-50 text-20 pt-5">Version 6.2,7.2</p>
                     </div>
-                ))}
+                    <div className="py-10">
+                        <p className="text-cyan-50 text-20 pt-5">Ensure high availability for all your MySQL instances by automating deployments, both on-premise and in the cloud, following the vendors’ recommended best practices from the start.</p>
+                        <p className="text-cyan-50 text-20 pt-5">Simplify replication management with seamless backup & restore, all conveniently accessible through a unified console.</p>
+                    </div>
+                    <div className="rounded items-center gap-6 w-30">
+                        <a href={Route.CONTACTS}
+                           className="rounded bg-cyan-500 hover:bg-cyan-600 grid place-items-center w-full text-cyan-50 p-3" >
+                            <button>
+                                <span>Request a Demo</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div className="col-start-2 rounded-3xl text-4xl items-center ">
+                </div>
             </div>
+            <Highlights/>
+            <Features/>
+            <Faq/>
         </div>
     );
 };
