@@ -36,7 +36,7 @@ const Highlights = () =>{
                     {highlights.map(({name,items}, idx) => (
                         <div className="col-span-1 rounded-3xl border-2 border-cyan-50" key={idx}>
                             <div className="border-b-2 border-cyan-50 p-5">
-                                <span className="text-cyan-50 text-4xl font-bold font-large">{name}</span>
+                                <span className="text-cyan-50 text-3xl font-bold font-large">{name}</span>
                             </div>
                             <div className="pr-10 pl-10">
                                 {items.map(({name}, idx) => (
