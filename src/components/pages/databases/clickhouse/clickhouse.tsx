@@ -16,7 +16,7 @@ const Clickhouse = () =>{
                         <p className="text-cyan-50 text-20 pt-5">Version 22.12,23.10</p>
                     </div>
                     <div className="py-10">
-                        <p className="text-cyan-50 text-20 pt-5">Ensure high availability for all your MySQL instances by automating deployments, both on-premise and in the cloud, following the vendors’ recommended best practices from the start.</p>
+                        <p className="text-cyan-50 text-20 pt-5">Ensure high availability for all your ClickHouse instances by automating deployments, both on-premise and in the cloud, following the vendors’ recommended best practices from the start.</p>
                         <p className="text-cyan-50 text-20 pt-5">Simplify replication management with seamless backup & restore, all conveniently accessible through a unified console.</p>
                     </div>
                     <div className="rounded items-center gap-6 w-30">

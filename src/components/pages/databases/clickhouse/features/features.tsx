@@ -50,16 +50,16 @@ const Features = () =>{
                 </div>
                 {features.map(({name,feature}, idx) => (
                     <div className="grid grid-cols-3 border-b-2 border-t-2 border-cyan-50" key={idx}>
-                        <div className="place-items-center">
-                            <span className="col-span-1 items-center place-content-center text-cyan-50 text-2xl font-bold font-large">{name}</span>
+                        <div className="place-items-center items-center justify-items-center content-center">
+                            <span className="col-span-1 items-center place-content-center text-cyan-50 text-xl font-bold font-large">{name}</span>
                         </div>
                         <div className="col-span-2 rounded-2xl">
                             {feature.map(({name,enable}, idx) => (
                                 <div className="col-span-1 rounded-2xl pb-2" key={idx}>
                                     <div className="flex flex-cols-2 justify-between rounded-2xl pb-2 ">
                                         <span className="flex text-cyan-50 text-30 font-bold font-large">{idx+1}. {name}</span>
-                                        <div className="bg-cyan-800">
-                                            <CheckIcon  className={classNames(enable ? "text-cyan-50" : "text-cyan-90", "flex h-5 w-5")} />
+                                        <div className="flex none place-items-center items-center justify-items-center justify-self-center">
+                                            <CheckIcon  className={classNames(enable ? "text-cyan-50" : "text-cyan-60", "flex h-5 w-5")} />
                                         </div>
                                     </div>
                                 </div>

@@ -28,7 +28,7 @@ const highlights = [
 const Highlights = () =>{
     return (
         <>
-            <div className="w-full gap-sm-grid items-center group px-52">
+            <div className="w-full gap-sm-grid items-center group px-32">
                 <div className="p-10 text-center flex flex-col items-center">
                     <h1 className="text-cyan-50 text-4xl font-bold font-large pb-10 ">Highlights</h1>
                 </div>
