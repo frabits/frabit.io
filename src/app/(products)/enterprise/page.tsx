@@ -1,10 +1,10 @@
-import Mongodb from '@/components/pages/databases/mongodb';
+import Platform from '@/components/pages/products/platform';
 
 const Page = () => {
     return (
         <>
             <h1 className="sr-only">Support database</h1>
-            <Mongodb />
+            <Platform />
         </>
     );
 };

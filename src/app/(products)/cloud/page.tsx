@@ -1,10 +1,10 @@
-import Mysql from '@/components/pages/databases/mysql';
+import Cloud from '@/components/pages/products/cloud';
 
 const Page = () => {
     return (
         <>
             <h1 className="sr-only">Support database</h1>
-            <Mysql />
+            <Cloud />
         </>
     );
 };

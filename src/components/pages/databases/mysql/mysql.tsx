@@ -13,7 +13,7 @@ const Mysql = () =>{
                 <div className="col-start-1 items-center p-10">
                     <div className="">
                         <h1 className="text-cyan-50 text-4xl font-bold font-large">MySQL</h1>
-                        <p className="text-cyan-50 text-20 pt-5">Version 6.2,7.2</p>
+                        <p className="text-cyan-50 text-20 pt-5">Version 5.7,8.0</p>
                     </div>
                     <div className="py-10">
                         <p className="text-cyan-50 text-20 pt-5">Ensure high availability for all your MySQL instances by automating deployments, both on-premise and in the cloud, following the vendors’ recommended best practices from the start.</p>
