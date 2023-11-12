@@ -24,10 +24,10 @@ const Banner = ({ bannerText, bannerUrl,disable }: { bannerText: string; bannerU
         //getReleaseVersion();
     }, []);
     return (
-        <div className={classNames(display=="1"?"":"hidden","bg-cyan-500 rounded-2xl pr-20 pl-20 relative z-20 text-white transition-colors duration-200")}>
+        <div className={classNames(display=="1"?"":"hidden","bg-cyan-500 pr-20 pl-20 relative z-20 text-white transition-colors duration-200")}>
             <div className="grid grid-cols-3 justify-items-center">
                 <div className="flex items-center w-8"></div>
-                <a className="group/link relative -z-10 mx-auto flex h-10 w-full items-center justify-center px-4.5 md:h-[46px]"
+                <a className="group/link relative -z-10 mx-auto flex  w-full items-center justify-center px-4.5"
                    href={bannerUrl}
                 >
                     <p className="flex flex-row justify-items-center items-center justify-center mb-2 mt-2 font-bold text-cyan-50">{bannerText}
