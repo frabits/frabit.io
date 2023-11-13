@@ -29,7 +29,7 @@ const feature = [
 
 const Support = () =>{
     return (
-            <div className="grid grid-cols-1  px-20 sm:gap-y-14">
+            <div className="grid grid-cols-1  py-20 sm:gap-y-14">
                 <div className="mx-auto pt-10 max-w-2xl text-center">
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Support Center</h1>
                     <div className="mt-6 font-bold text-xl text-neutral-200">Trusted support services for your organization</div>
