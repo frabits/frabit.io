@@ -5,7 +5,7 @@ const CareersPage = () => {
     return (
         <>
             <h1 className="sr-only">Careers</h1>
-            <div className="pt-10 mx-auto max-w-5xl">
+            <div className="pt-32 sm:gap-y-14 mx-auto max-w-5xl">
                 <div className="mx-auto pt-10 pb-10 bg-cyan-500 rounded-2xl max-w-4xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Become part of our team</h2>
                     <p className="mt-6 text-lg leading-8 text-cyan-50">

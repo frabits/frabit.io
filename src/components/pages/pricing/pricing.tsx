@@ -46,7 +46,7 @@ function classNames(...classes) {
 const Pricing = () =>{
     return (
         <>
-            <div className="mx-auto">
+            <div className="pt-20 mx-auto">
                 <div className="mx-auto pt-10 max-w-6xl text-center flex flex-col items-center">
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Pricing</h1>
                     <div className="mt-6 text-neutral-200">Options for every user,organization,and use case</div>

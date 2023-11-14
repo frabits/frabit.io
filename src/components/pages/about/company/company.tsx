@@ -5,7 +5,7 @@ import React from "react";
 
 const Company = () => (
     <>
-        <div className="py-14">
+        <div className="pt-32">
             <div className="mx-auto grid max-w-7xl rounded-3xl text-center items-center pr-5 pl-5">
                 <h2 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">About Frabit</h2>
                 <p className="mt-6 text-lg leading-8 text-cyan-50 pr-20 pl-20">
