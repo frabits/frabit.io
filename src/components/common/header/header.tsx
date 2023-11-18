@@ -20,11 +20,10 @@ const callsToAction = [
 
 
 const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const topBanner = PROMO_DATA.TOP_BANNER
     return (
         <>
-            <div className="fixed w-full">
+            <div className="w-full">
                 {topBanner && <Banner bannerText={topBanner.title} bannerUrl={topBanner.pathname} disable={topBanner.disabled} />}
                 <header className="bg-gradient-to-r from-cyan-900 to-zinc-800">
                     <nav className="mx-auto flex items-center justify-between flex-cols-3 max-w-7xl  p-1" aria-label="Global">
