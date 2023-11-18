@@ -51,8 +51,7 @@ const features = [
     {
         name: 'High availability',
         feature: [
-            {name:'Deployment',community:true,enterprise:true,ultimate:true},
-            {name:'Automated failover',community:true,enterprise:true,ultimate:true},
+            {name:'Automated failover',community:false,enterprise:true,ultimate:true},
         ]
     },
     {
@@ -61,7 +60,7 @@ const features = [
             {name:'Full/incremental',community:true,enterprise:true,ultimate:true},
             {name:'Restore:PITR',community:true,enterprise:true,ultimate:true},
             {name:'Local/cloud storage',community:true,enterprise:true,ultimate:true},
-            {name:'Encryption',community:true,enterprise:true,ultimate:true},
+            {name:'Encryption',community:false,enterprise:true,ultimate:true},
             {name:'Compression',community:true,enterprise:true,ultimate:true},
         ]
     },
@@ -70,6 +69,14 @@ const features = [
         feature: [
             {name:'Key management',community:true,enterprise:true,ultimate:true},
             {name:'Audit log',community:false,enterprise:true,ultimate:true},
+        ]
+    },
+    {
+        name: 'Support',
+        feature: [
+            {name:'Community support',community:true,enterprise:true,ultimate:true},
+            {name:'Standard Support',community:false,enterprise:true,ultimate:true},
+            {name:'Premium Support',community:false,enterprise:false,ultimate:true},
         ]
     },
 ];
@@ -126,25 +133,26 @@ const Pricing = () =>{
                 </svg>
                 <div className="bg-cyan-500 w-full">
                     <div className="mx-auto w-full pr-32 pl-32">
-                        <div className=" flex flex-col items-center rounded-xl border-dashed border-2 border-cyan-500">
+                        <div className=" flex flex-col items-center rounded-xl">
                             <h2 className="flex flex-row-1 text-3xl p-5 font-bold leading-none text-center tracking-wider text-cyan-50">Compare features</h2>
-                            <div className="grid grid-cols-5 w-full py-10">
+                            <div className="grid grid-cols-5 w-full">
                                 <p className="grid-cols-1"></p>
                                 <p className="grid-cols-1"></p>
                                 <p className="grid-cols-1 text-2xl p-5 font-bold leading-none text-center tracking-wider text-cyan-50">Community</p>
                                 <p className="grid-cols-1 text-2xl p-5 font-bold leading-none text-center tracking-wider text-cyan-50">Enterprise</p>
                                 <p className="grid-cols-1 text-2xl p-5 font-bold leading-none text-center tracking-wider text-cyan-50">Ultimate</p>
                             </div>
-                            {features.map(({name,feature}, idx) => (
-                                <div className="grid grid-cols-5 w-full border-cyan-50" key={idx}>
+                            <div className="border-t-4 w-full pt-5 pb-5 border-cyan-50">
+                                {features.map(({name,feature}, idx) => (
+                                    <div className="grid grid-cols-5 w-full border-cyan-50" key={idx}>
                                     <div className="col-span-1 w-50 place-items-center items-center justify-items-center content-center">
                                         <span className="items-center place-content-center text-cyan-50 text-xl font-bold font-large">{name}</span>
                                     </div>
                                     <div className="col-span-4 w-full rounded-2xl">
                                         {feature.map(({name,community,enterprise,ultimate}, idx) => (
-                                            <div className="col-span-1 rounded-2xl pb-2" key={idx}>
-                                                <div className="flex flex-cols-2 justify-between rounded-2xl pb-2 ">
-                                                    <span className="flex text-cyan-50 text-30 font-bold font-large">{name}</span>
+                                            <div className="flex flex-cols-4 w-full rounded-2xl pb-2" key={idx}>
+                                                <span className="flex col-span-1 w-96 text-cyan-50 text-30 font-bold font-large">{name}</span>
+                                                <div className="flex col-span-3 w-full justify-around rounded-2xl pb-2 ">
                                                     <div className="flex none place-items-center items-center justify-items-center justify-self-center">
                                                         <CheckIcon  className={classNames(community ? "text-cyan-50" : "invisible", "flex h-5 w-5")} />
                                                     </div>
@@ -159,7 +167,8 @@ const Pricing = () =>{
                                         ))}
                                     </div>
                                 </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
