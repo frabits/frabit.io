@@ -62,6 +62,7 @@ const features = [
             {name:'Local/cloud storage',community:true,enterprise:true,ultimate:true},
             {name:'Encryption',community:false,enterprise:true,ultimate:true},
             {name:'Compression',community:true,enterprise:true,ultimate:true},
+            {name:'Auto-Verify',community:false,enterprise:true,ultimate:true},
         ]
     },
     {
