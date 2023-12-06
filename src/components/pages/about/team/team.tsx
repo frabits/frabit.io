@@ -79,12 +79,12 @@ const Team = () => {
                                     <div>
                                     <div className="flex justify-start gap-2 row-span-1 w-full h-full">
                                             {person.personSocial.map(({ name, href, icon: Icon }, idx) => (
-                                                <a className="w-5 h-5 bg-neutral-900 hover:bg-neutral-800 rounded grid place-items-start border border-neutral-700/80"
+                                                <a className="w-5 h-5  rounded grid place-items-start border border-neutral-700/80"
                                                    key={idx}
                                                    href={href}
                                                    rel="noopener noreferrer"
                                                    target="_blank">
-                                                    <div className="flex items-stretch bg-zinc-900 rounded-md">
+                                                    <div className="flex items-stretch bg-cyan-600 rounded-md">
                                                         <span className="sr-only items-center text-cyan-50">{name}</span>
                                                         <img className="flex place-self-center hover:bg-zinc-800" src={Icon} />
                                                     </div>
