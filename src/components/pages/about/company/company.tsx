@@ -17,6 +17,9 @@ const Company = () => (
                 <p className="mt-6 text-lg leading-8 text-cyan-50 pr-20 pl-20">
                     Thanks to the most well-known databases,such as MySQL、Redis、MongoDB and ClickHouse, also include most database eco-system: Xtrabackup、orchestrator、gh-ost. we can easily integrate these databases and toolkits into a platform.
                 </p>
+                <p className="mt-6 text-lg leading-8 text-cyan-50 pr-20 pl-20">
+                    In addition to building Frabit, we provide custom database performance tuning, scalability consulting, and operational assistance for a number of well-known companies in the technology, social media, e-commerce, education, and gaming spaces.
+                </p>
             </div>
         </div>
     </>
