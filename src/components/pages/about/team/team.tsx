@@ -86,7 +86,7 @@ const Team = () => {
                                                    target="_blank">
                                                     <div className="flex items-stretch bg-cyan-600 rounded-md">
                                                         <span className="sr-only items-center text-cyan-50">{name}</span>
-                                                        <img className="flex place-self-center hover:bg-zinc-800" src={Icon} />
+                                                        <img className="flex place-self-center" src={Icon} />
                                                     </div>
                                                 </a>
                                             ))}
