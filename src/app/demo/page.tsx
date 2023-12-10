@@ -3,7 +3,7 @@ import Demo from '@/components/pages/demo/demo';
 const DemoPage = () => {
     return (
         <>
-            <h1 className="sr-only">Contact us</h1>
+            <h1 className="sr-only">Request a demo</h1>
             <Demo />
         </>
     );
