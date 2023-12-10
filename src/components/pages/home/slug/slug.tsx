@@ -18,7 +18,7 @@ const Slug = () =>{
                        target="_blank"
                        className="rounded bg-cyan-500 hover:bg-cyan-600 grid place-items-center w-full text-cyan-50 p-3" >
                         <button>
-                            <span>Request Demo</span>
+                            <span>Request a Demo</span>
                         </button>
                     </a>
                     <a href={Route.QUICK}
