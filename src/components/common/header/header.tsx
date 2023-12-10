@@ -91,7 +91,7 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                     Support
                                 </a>
                                 <a href={Route.ABOUT} className="text-sm font-semibold leading-6 text-cyan-50">
-                                    About Us
+                                    About
                                 </a>
                                 <a href={Route.CONTACTS} className="text-sm font-semibold leading-6 text-cyan-50">
                                     Contact Us
