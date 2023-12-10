@@ -48,6 +48,7 @@ export const MENU = {
             name: 'Support Database',
             items: [
                 { name: 'MySQL', linkUrl: Route.DB_MYSQL,isExternal:false },
+                { name: 'PostgreSQL', linkUrl: Route.DB_POSTGRE,isExternal:false },
                 { name: 'MongoDB', linkUrl: Route.DB_MONGODB,isExternal:false },
                 { name: 'Redis', linkUrl: Route.DB_REDIS,isExternal:false },
                 { name: 'ClickHouse', linkUrl: Route.DB_CLICKHOUSE,isExternal:false },

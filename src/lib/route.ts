@@ -12,6 +12,7 @@ const Route = {
 
     // Support database
     DB_MYSQL: '/mysql',
+    DB_POSTGRE: '/postgresql',
     DB_MONGODB: '/mongodb',
     DB_REDIS: '/redis',
     DB_CLICKHOUSE: '/clickhouse',
