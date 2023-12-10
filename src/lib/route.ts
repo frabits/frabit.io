@@ -5,6 +5,7 @@ const Route = {
     QUICK: '/docs/quick-start',
     DOCS: '/docs',
     BLOG: '/blog',
+    DEMO: '/demo',
     CONTACTS: '/contacts',
     FEATURES: '/features',
     RELEASE_NOTES: '/release-notes',

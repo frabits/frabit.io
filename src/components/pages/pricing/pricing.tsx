@@ -36,7 +36,7 @@ const featuresSuper = [
 const plan = [
     { name: 'Community', recommended: false,useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: Route.DOWNLOADS,notice:'Download now'},
     { name: 'Enterprise', recommended: true,useCase: 'Designed to handle production workloads',price:'$49.9', feature:featuresPro,href: Route.CONTACTS,notice:'Request a demo'},
-    { name: 'Ultimate', recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
+    { name: 'Ultimate', recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Demo us'},
 ]
 
 const features = [

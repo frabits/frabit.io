@@ -14,7 +14,7 @@ const Slug = () =>{
                     <p className="text-cyan-50 text-2xl pt-5">The next-gen database automatic platform</p>
                 </div>
                 <div className="flex flex-col rounded items-center pr-20 gap-6 w-full md:flex-row">
-                    <a href={Route.CLOUD_SIGNIN}
+                    <a href={Route.DEMO}
                        target="_blank"
                        className="rounded bg-cyan-500 hover:bg-cyan-600 grid place-items-center w-full text-cyan-50 p-3" >
                         <button>

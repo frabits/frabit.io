@@ -104,8 +104,8 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                     <GithubStarCounter />
                                 </div>
                             </div>
-                            <a href={Route.CLOUD_SIGNIN} className="text-sm items-center font-semibold leading-6 text-cyan-50">
-                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3">Book Demo</span>
+                            <a href={Route.DEMO} className="text-sm items-center font-semibold leading-6 text-cyan-50">
+                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3">Request a demo</span>
                             </a>
                             <a href={Route.DOWNLOADS} className="text-sm items-center font-semibold leading-6 text-cyan-50">
                                 <span className="flex items-center justify-items-center rounded h-10 w-25 p-3 bg-cyan-500 hover:bg-cyan-600">Downloads</span>
