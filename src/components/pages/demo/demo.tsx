@@ -29,7 +29,7 @@ const  Demo = () => {
         <>
         <div className="isolate px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Contact Us</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Request A Demo</h2>
                 <p className="mt-2 text-lg leading-8 text-cyan-50">
                     Aute magna irure deserunt veniam aliqua magna enim voluptate.
                 </p>
