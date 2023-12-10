@@ -62,7 +62,7 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                     </p>
                 </div>
                 <div className="grid grid-cols h-50 gap-5">
-                    <div className="flex gap-5 w-full h-full rounded border-2 border-double border-cyan-500 rounded-lg text-cyan-50 p-3">
+                    <div className="flex gap-5 w-full h-full rounded border-2 border-cyan-500 rounded-lg text-cyan-50 p-3">
                         <div className="flex w-60 place-items-center gap-2">
                             <img className="flex place-items-center w-10 f-10" src="/icon/linux.png" />
                             <span className="text-14 font-bold leading-none tracking-wider text-cyan-50">Linux</span>
@@ -90,7 +90,7 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                             ))}
                         </div>
                     </div>
-                    <div className="flex gap-5 w-full h-full rounded border-2 border-double border-cyan-500 rounded-lg text-cyan-50 p-3">
+                    <div className="flex gap-5 w-full h-full rounded border-2 border-cyan-500 rounded-lg text-cyan-50 p-3">
                         <div className="flex w-60 place-items-center gap-2">
                             <img className="flex place-self-center w-10 f-10" src="/icon/apple.png" />
                             <span className="text-14 font-bold leading-none tracking-wider text-cyan-50">MacOS</span>
