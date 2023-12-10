@@ -146,8 +146,8 @@ const  Contact = () => {
                     </button>
                     <span className="block text-center text-sm font-semibold leading-6 text-cyan-50">
                           By clicking Submit, you acknowledge that Frabit Labs will process your personal information in accordance with our
-                    <a href={Route.PRIVACY} className="font-semibold text-cyan-500 hover:text-cyan-600">&nbsp;privacy&nbsp;
-                    </a> policy.
+                    <a href={Route.PRIVACY} className="font-semibold text-cyan-500 hover:text-cyan-600">&nbsp;privacy&nbsp;policy
+                    </a>.
                     </span>
                 </div>
             </form>
