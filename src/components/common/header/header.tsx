@@ -9,7 +9,6 @@ import Banner from "@/components/common/banner";
 import PROMO_DATA from "@/lib/promo-data";
 
 const products = [
-    { name: 'Frabit Cloud', description: 'Frabit cloud version that fully managed without deployment locally', href:Route.CLOUD_SIGNIN , icon: CloudIcon },
     { name: 'Frabit Platform', description: 'The next-gen database automatic platform', href: '#', icon: SquaresPlusIcon },
 ]
 
@@ -91,8 +90,8 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                 <a href={Route.SUPPORT} className="text-sm font-semibold leading-6 text-cyan-50">
                                     Support
                                 </a>
-                                <a href={Route.DOWNLOADS} className="text-sm font-semibold leading-6 text-cyan-50">
-                                    Downloads
+                                <a href={Route.ABOUT} className="text-sm font-semibold leading-6 text-cyan-50">
+                                    About Us
                                 </a>
                                 <a href={Route.CONTACTS} className="text-sm font-semibold leading-6 text-cyan-50">
                                     Contact Us
@@ -106,10 +105,10 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                 </div>
                             </div>
                             <a href={Route.CLOUD_SIGNIN} className="text-sm items-center font-semibold leading-6 text-cyan-50">
-                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3">Sign in</span>
+                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3">Book Demo</span>
                             </a>
-                            <a href={Route.CLOUD_SIGNUP} className="text-sm items-center font-semibold leading-6 text-cyan-50">
-                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3 bg-cyan-500 hover:bg-cyan-600">Try FrabitCloud</span>
+                            <a href={Route.DOWNLOADS} className="text-sm items-center font-semibold leading-6 text-cyan-50">
+                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3 bg-cyan-500 hover:bg-cyan-600">Downloads</span>
                             </a>
                         </div>
                     </nav>
