@@ -135,34 +135,7 @@ const  Contact = () => {
               />
                         </div>
                     </div>
-                    <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
-                        <div className="flex h-6 items-center">
-                            <Switch
-                                checked={agreed}
-                                onChange={setAgreed}
-                                className={classNames(
-                                    agreed ? 'bg-cyan-500' : 'bg-gray-200',
-                                    'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                                )}
-                            >
-                                <span className="sr-only">Agree to policies</span>
-                                <span
-                                    aria-hidden="true"
-                                    className={classNames(
-                                        agreed ? 'translate-x-3.5' : 'translate-x-0',
-                                        'h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out'
-                                    )}
-                                />
-                            </Switch>
-                        </div>
-                        <Switch.Label className="text-sm leading-6 text-cyan-50">
-                            By selecting this, you agree to our{' '}
-                            <a href={Route.PRIVACY} className="font-semibold text-cyan-500 hover:text-cyan-600">
-                                privacy&nbsp;policy
-                            </a>
-                            .
-                        </Switch.Label>
-                    </Switch.Group>
+
                 </div>
                 <div className="mt-10">
                     <button
@@ -171,6 +144,11 @@ const  Contact = () => {
                     >
                         Start talk
                     </button>
+                    <span className="block text-center text-sm font-semibold leading-6 text-cyan-50">
+                          By clicking Submit, you acknowledge that Frabit Labs will process your personal information in accordance with our
+                    <a href={Route.PRIVACY} className="font-semibold text-cyan-500 hover:text-cyan-600">&nbsp;privacy&nbsp;
+                    </a> policy.
+                    </span>
                 </div>
             </form>
         </div>
