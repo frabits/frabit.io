@@ -90,8 +90,8 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                 <a href={Route.SUPPORT} className="text-sm font-semibold leading-6 text-cyan-50">
                                     Support
                                 </a>
-                                <a href={Route.ABOUT} className="text-sm font-semibold leading-6 text-cyan-50">
-                                    About
+                                <a href={Route.PRICING} className="text-sm font-semibold leading-6 text-cyan-50">
+                                    Pricing
                                 </a>
                                 <a href={Route.CONTACTS} className="text-sm font-semibold leading-6 text-cyan-50">
                                     Contact Us
