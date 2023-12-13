@@ -121,7 +121,7 @@ const Footer = () => (
                 </div>
             </div>
             {/** Legal */}
-            <div className="flex items-center gap-x-9">
+            <div className="flex items-center gap-x-3">
                 <Link
                     className="text-16 text-cyan-50 hover:text-slate-300 font-medium tracking-tight xs:text-14"
                     theme="gray"
