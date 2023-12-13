@@ -136,6 +136,7 @@ const Footer = () => (
                 >
                     Policy
                 </Link>
+                <p className="text-16 text-cyan-50 hover:text-slate-300 font-medium tracking-tight xs:text-14">Do not share my personal information</p>
             </div>
         </div>
     </footer>
