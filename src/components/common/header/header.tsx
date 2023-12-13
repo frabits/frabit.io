@@ -98,14 +98,14 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                 </a>
                             </Popover.Group>
                         </div>
-                        <div className="flex items-center justify-between">
+                        <div className="flex items-center justify-between gap-3">
                             <div className="flex flex-cols-3 gap-3 items-center justify-between">
                                 <div className="cols-span-2 items-center justify-items-center">
                                     <GithubStarCounter />
                                 </div>
                             </div>
                             <a href={Route.DEMO} className="text-sm items-center font-semibold leading-6 text-cyan-50 hover:text-cyan-90">
-                                <span className="flex items-center justify-items-center rounded h-10 w-25 p-3">Request a demo</span>
+                                <span className="flex items-center justify-items-center rounded border-2 border-cyan-500 hover:border-cyan-600 h-10 w-25 p-3">Request a demo</span>
                             </a>
                             <a href={Route.DOWNLOADS} className="text-sm items-center font-semibold leading-6 text-cyan-50">
                                 <span className="flex items-center justify-items-center rounded h-10 w-25 p-3 bg-cyan-500 hover:bg-cyan-600">Downloads</span>
