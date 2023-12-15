@@ -62,13 +62,13 @@ const Footer = () => (
             ))}
 
             <div className="col-span-2 gap-0">
-                <div className="grid grid-rows-2 gap-3 grid-flow-col">
+                <div className="grid grid-rows-2 grid-flow-col">
                     <div>
                         <div className="row-span-1 ">
                             <img className="flex w-34 h-11" src="/images/logo.svg"/>
                         </div>
                         <div className="row-span-1">
-                            <h2 className="flex items-center h-9 w-full text-15 font-bold leading-none tracking-wider text-cyan-50">
+                            <h2 className="flex items-center h-9 w-full text-10 font-bold leading-none tracking-wider text-cyan-50">
                                 The next-gen database automatic platform
                             </h2>
                         </div>
