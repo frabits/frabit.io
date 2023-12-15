@@ -2,6 +2,7 @@ import {CloudIcon, SquaresPlusIcon} from "@heroicons/react/20/solid";
 import {MENU} from "@/lib/menus";
 import Link from "@/components/common/link";
 import ExternalIcon from "@/assets/external.inline.svg";
+import Desc from './desc'
 import React from "react";
 import Route from '@/lib/route';
 
@@ -90,11 +91,10 @@ const Support = () =>{
                                     </p>
                                 </a>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
+                <Desc/>
             </div>
     );
 };
