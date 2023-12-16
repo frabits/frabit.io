@@ -34,7 +34,7 @@ const Sla = () =>{
                 </div>
                 <div className="mx-auto w-full max-w-5xl items-center justify-evenly text-center md:flex md:space-x-20">
                     {Slas.map(({name,action,tips}, idx) => (
-                        <div className="mb-10 rounded-lg bg-neutral-900/50 p-6 md:mb-0 md:w-1/3 bg-cyan-900 rounded-lg" key={idx}>
+                        <div className="mb-10 rounded-lg p-6 md:mb-0 md:w-1/3 bg-cyan-900 rounded-lg" key={idx}>
                             <p className="mb-2 row-span-1 text-cyan-50 text-xl font-bold">{name}</p>
                             <p className="mb-10 text-2xl row-span-1 text-slate-400 text-base">{tips}</p>
                             <p className="mb-2 text-base font-bold col-span-3 p-6 text-slate-400">{action.resp}</p>
