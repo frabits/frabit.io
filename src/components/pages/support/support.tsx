@@ -2,7 +2,11 @@ import {CloudIcon, SquaresPlusIcon} from "@heroicons/react/20/solid";
 import {MENU} from "@/lib/menus";
 import Link from "@/components/common/link";
 import ExternalIcon from "@/assets/external.inline.svg";
-import Desc from './desc'
+import Desc from './desc';
+import Level from './level';
+import Sla from './sla';
+import Steps from './steps';
+
 import React from "react";
 import Route from '@/lib/route';
 
@@ -95,6 +99,12 @@ const Support = () =>{
                     </div>
                 </div>
                 <Desc/>
+                <Level/>
+                <Sla/>
+                <Steps/>
+                <div className="place-self-center text-center items-center">
+                    <p className="max-w-3xl pt-32 text-center text-base leading-relaxed text-slate-400 ">Our Frabit Support Services team is focused not only on your quick questions or break-fix issues, but also on your hardest questions such as how to define your schema, how to model your data, or how to migrate from a legacy system. Our Expert Sessions, included with our Support for all enterprise , allows you to access our Frabit experts via a virtual consultative support question - please open a case to get started.</p>
+                </div>
             </div>
     );
 };
