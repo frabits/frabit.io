@@ -103,7 +103,7 @@ const Support = () =>{
                 <Sla/>
                 <Steps/>
                 <div className="place-self-center text-center items-center">
-                    <p className="max-w-3xl pt-32 text-center text-base leading-relaxed text-slate-400 ">Our Frabit Support Services team is focused not only on your quick questions or break-fix issues, but also on your hardest questions such as how to define your schema, how to model your data, or how to migrate from a legacy system. Our Expert Sessions, included with our Support for all enterprise , allows you to access our Frabit experts via a virtual consultative support question - please open a case to get started.</p>
+                    <p className="max-w-3xl pt-22 text-center text-base leading-relaxed text-slate-400 ">Our Frabit Support Services team is focused not only on your quick questions or break-fix issues, but also on your hardest questions such as how to define your schema, how to model your data, or how to migrate from a legacy system. Our Expert Sessions, included with our Support for all enterprise , allows you to access our Frabit experts via a virtual consultative support question - please open a case to get started.</p>
                 </div>
             </div>
     );

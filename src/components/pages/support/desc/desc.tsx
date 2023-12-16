@@ -70,11 +70,11 @@ const Desc = () =>{
                                 <p>Docs</p>
                             </td>
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
-                                <p>On-Demand training included</p>
+                                <p>On-Demand training included (Limit 4 times/Year)</p>
                                 <p>Docs</p>
                             </td>
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
-                                <p>On-Demand training included</p>
+                                <p>On-Demand training included (None-limit)</p>
                                 <p>Docs</p>
                             </td>
                         </tr>
@@ -88,7 +88,7 @@ const Desc = () =>{
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
                                 <p>Unlimited support cases</p>
                                 <p>Business day support only (Monday-Friday)</p>
-                                <div>
+                                <div className="pl-5 text-slate-400 text-8">
                                     <p>1 Business day</p>
                                 </div>
                                 <p>Office hours</p>
@@ -96,8 +96,8 @@ const Desc = () =>{
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
                                 <p>Unlimited support cases</p>
                                 <p>24x7 support</p>
-                                <div>
-                                    <p>Sev-1: 1 hour 24x7</p>
+                                <div className="pl-5 text-slate-400 text-8">
+                                    <p>Sev-1: 1 hour 24*7</p>
                                     <p>Sev-2: 4 business hours</p>
                                     <p>Sev-3: 1 business day</p>
                                 </div>
@@ -109,7 +109,6 @@ const Desc = () =>{
                                 <strong>Expert Sessions</strong>
                             </td>
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
-                                <p>None</p>
                             </td>
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
                                 <p>Unlimited live Expert Sessions (short consultative guidance sessions)</p>
@@ -125,7 +124,6 @@ const Desc = () =>{
                                 <strong>Professional Services</strong>
                             </td>
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
-                                <p>None</p>
                             </td>
                             <td className="border-r border-r-cyan-700 bg-neutral-750 p-4 ">
                                 <p>Frabit consultancy packages available for purchase</p>
