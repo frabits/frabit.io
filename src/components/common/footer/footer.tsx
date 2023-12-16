@@ -68,7 +68,7 @@ const Footer = () => (
                             <img className="flex w-34 h-11" src="/images/logo.svg"/>
                         </div>
                         <div className="row-span-1">
-                            <h2 className="flex items-center h-9 w-full text-8 font-bold leading-none tracking-wider text-cyan-50">
+                            <h2 className="flex items-center h-9 w-full text-6 font-bold leading-none tracking-wider text-cyan-50">
                                 The next-gen database automatic platform
                             </h2>
                         </div>
