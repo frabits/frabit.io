@@ -1,6 +1,6 @@
 import Link from '@/components/common/link';
 
-import Image from 'next/image'
+import Image from 'next/image';
 import { MENU } from '@/lib/menus';
 import Route from '@/lib/route';
 

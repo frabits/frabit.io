@@ -1,7 +1,4 @@
 'use client';
-
-import Image from 'next/image';
-
 import { useEffect, useRef } from 'react';
 
 import Cards from './cards';
@@ -9,8 +6,8 @@ import Cards from './cards';
 const Community = () => {
 
     return (
-        <></>
+        <Cards/>
     );
 };
 
-export { Community };
+export default Community;

@@ -20,9 +20,9 @@ const Route = {
     // Resources
     DOWNLOADS: '/downloads',
     SUPPORT: '/support',
-    FRABIT_OSS: '/community',
-    FRABIT: '/enterprise',
-    CLOUD: '/cloud',
+    FRABIT_OSS: '/products/community',
+    FRABIT: '/products/enterprise',
+    CLOUD: '/products/cloud',
 
     // Integrations
     INTE_GITHUB: '/github',
@@ -34,6 +34,7 @@ const Route = {
     TECHLEAD: '/usecase/techlead',
 
     CAREERS: '/careers',
+    COMMUNITY: '/community',
     PRIVACY: '/privacy',
     TERMS: '/terms',
 
