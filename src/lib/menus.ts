@@ -55,6 +55,14 @@ export const MENU = {
             ],
         },
         {
+            name: 'Services',
+            items: [
+                { name: 'Remote DBA', linkUrl: Route.CLOUD,isExternal:false },
+                { name: 'Technical Support', linkUrl: Route.FRABIT,isExternal:false },
+                { name: 'Consulting', linkUrl: Route.FRABIT_OSS,isExternal:false },
+            ],
+        },
+        {
             name: 'Products',
             items: [
                 { name: 'Frabit Cloud', linkUrl: Route.CLOUD,isExternal:false },
