@@ -84,6 +84,9 @@ const Header = ({ hasBanner = false }: { hasBanner?: boolean }) => {
                                         </Popover.Panel>
                                     </Transition>
                                 </Popover>
+                                <a href={Route.SERVICES} className="text-sm font-semibold leading-6 text-cyan-50">
+                                    Services
+                                </a>
                                 <a href={Route.DOCS} className="text-sm font-semibold leading-6 text-cyan-50">
                                     Docs
                                 </a>

@@ -7,6 +7,7 @@ const Route = {
     BLOG: '/blog',
     DEMO: '/demo',
     CONTACTS: '/contacts',
+    SERVICES: '/services',
     FEATURES: '/features',
     RELEASE_NOTES: '/release-notes',
 
@@ -15,7 +16,7 @@ const Route = {
     DB_POSTGRE: '/postgresql',
     DB_MONGODB: '/mongodb',
     DB_REDIS: '/redis',
-    DB_CLICKHOUSE: '/clickhouse',
+    DB_CLICKHOUSE: '/remote-dba',
 
     // Resources
     DOWNLOADS: '/downloads',
