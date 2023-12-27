@@ -51,7 +51,7 @@ const Cards = () => {
                 {communities.map((item,idx) => (
                     <div className="border-2 rounded-3xl items-center border-cyan-500 px-10 py-6" key={idx}>
                         <div className="w-full flex items-stretch gap-1 justify-center gap-2  items-center">
-                            <Image className="flex justify-center place-self-center" alt="" width={90} height={90} src={item.icon} />
+                            <Image className="flex justify-center place-self-center" alt="" width={80} height={80} src={item.icon} />
                             <h3 className="justify-center place-self-center text-5xl font-semibold leading-7 tracking-tight text-center text-cyan-50">{item.name}</h3>
                         </div>
                         <div className="w-full h-32 p-6 items-center">
