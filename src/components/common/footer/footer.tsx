@@ -39,7 +39,7 @@ const socialAddrs = [
 ];
 const Footer = () => (
     <footer className="pt-3 bg-gradient-to-r from-cyan-900 to-zinc-800">
-        <div className="grid grid-cols-8  pl-20 pr-20 sm:gap-y-14">
+        <div className="grid grid-cols-7  pl-20 pr-20 sm:gap-y-14">
             {MENU.footer.map(({ name, items }, idx) => (
                 <div className="col-span-1" key={idx}>
                     <h3 className="text-14 font-bold leading-none tracking-wider text-cyan-50">{name}</h3>
