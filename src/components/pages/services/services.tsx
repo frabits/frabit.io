@@ -36,8 +36,8 @@ const featuresSuper = [
 
 const plan = [
     { name: 'Remote DBA', icon:<UserGroupIcon />,recommended: false,useCase: 'Great for smaller workloads and starter projects', feature:featuresCommunity,href: Route.REMOTE_DBA,notice:'Learn more'},
-    { name: 'Technical Support', icon:<SquaresPlusIcon />,recommended: true,useCase: 'Designed to handle production workloads', feature:featuresPro,href: Route.CONTACTS,notice:'Learn more'},
-    { name: 'Consulting', icon:<ChartBarIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',feature:featuresSuper,href: Route.CONTACTS,notice:'Learn more'},
+    { name: 'Technical Support', icon:<SquaresPlusIcon />,recommended: true,useCase: 'Designed to handle production workloads', feature:featuresPro,href: Route.TECHNICAL_SUPPORT,notice:'Learn more'},
+    { name: 'Consulting', icon:<ChartBarIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',feature:featuresSuper,href: Route.CONSULTING,notice:'Learn more'},
 ]
 
 function classNames(...classes) {
