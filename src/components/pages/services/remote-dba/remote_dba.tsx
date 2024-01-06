@@ -77,7 +77,7 @@ const RemoteDBA = () =>{
                     <div className="mx-auto rounded-xl pt-6 max-w-6xl text-center flex flex-col items-center">
                         <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">SQL Databases</h1>
                         <div className="rounded-xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 p-6 gap-5">
-                            {sql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
+                            {sql.map(({ name, icon,recommended,useCase,feature,href,notice }, idx) => (
                                 <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500" key={idx}>
                                     <div className="h-56 py-3">
                                         <div className="flex w-full justify-center ">
@@ -114,7 +114,7 @@ const RemoteDBA = () =>{
                     <div className="mx-auto rounded-xl pt-6 max-w-6xl text-center flex flex-col items-center">
                         <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NoSQL Databases</h1>
                         <div className="rounded-xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 p-6 gap-5">
-                            {nosql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
+                            {nosql.map(({ name, icon,recommended,useCase,feature,href,notice }, idx) => (
                                 <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500" key={idx}>
                                     <div className="h-56 py-3">
                                         <div className="flex w-full justify-center ">
@@ -151,7 +151,7 @@ const RemoteDBA = () =>{
                     <div className="mx-auto rounded-xl pt-6 max-w-6xl text-center flex flex-col items-center">
                         <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NewSQL Databases</h1>
                         <div className="rounded-xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 p-6 gap-5">
-                            {newsql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
+                            {newsql.map(({ name, icon,recommended,useCase,feature,href,notice }, idx) => (
                                 <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500" key={idx}>
                                     <div className="h-56 py-3">
                                         <div className="flex w-full justify-center ">
