@@ -1,4 +1,4 @@
-import {CheckIcon,MinusIcon, CameraIcon,Squares2X2Icon, SquaresPlusIcon} from "@heroicons/react/20/solid";
+import {CheckIcon,UserGroupIcon,PhoneArrowUpRightIcon,ChartBarIcon, CameraIcon,Squares2X2Icon, SquaresPlusIcon} from "@heroicons/react/20/solid";
 import Route from '@/lib/route';
 import Link from "@/components/common/link";
 import ExternalIcon from "@/assets/external.inline.svg";
@@ -35,12 +35,9 @@ const featuresSuper = [
 ];
 
 const plan = [
-    { name: 'MySQL', icon:<CameraIcon />,recommended: false,useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: Route.DOWNLOADS,notice:'Download now'},
-    { name: 'Redis', icon:<Squares2X2Icon />,recommended: true,useCase: 'Designed to handle production workloads',price:'$49.9', feature:featuresPro,href: Route.CONTACTS,notice:'Request a demo'},
-    { name: 'MongoDB', icon:<SquaresPlusIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
-    { name: 'ClickHouse', icon:<SquaresPlusIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
-    { name: 'PostgreSQL', icon:<SquaresPlusIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
-    { name: 'OtherDB', icon:<SquaresPlusIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
+    { name: 'Remote DBA', icon:<UserGroupIcon />,recommended: false,useCase: 'Great for smaller workloads and starter projects', feature:featuresCommunity,href: Route.REMOTE_DBA,notice:'Learn more'},
+    { name: 'Technical Support', icon:<SquaresPlusIcon />,recommended: true,useCase: 'Designed to handle production workloads', feature:featuresPro,href: Route.CONTACTS,notice:'Learn more'},
+    { name: 'Consulting', icon:<ChartBarIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',feature:featuresSuper,href: Route.CONTACTS,notice:'Learn more'},
 ]
 
 function classNames(...classes) {
@@ -65,7 +62,6 @@ const Services = () =>{
                                     <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
                                     <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
                                     <div className="w-full h-15">
-                                        <div className="w-full text-2xl font-bold tracking-wider text-cyan-50">{price}</div>
                                         <div className="w-full text-50 text-cyan-50">/instance/month</div>
                                     </div>
                                 </div>

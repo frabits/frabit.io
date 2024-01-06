@@ -7,10 +7,13 @@ const Route = {
     BLOG: '/blog',
     DEMO: '/demo',
     CONTACTS: '/contacts',
-    SERVICES: '/services',
     FEATURES: '/features',
     RELEASE_NOTES: '/release-notes',
 
+    // Services
+
+    SERVICES: '/services',
+    REMOTE_DBA:'/services/remote-dba',
     // Support database
     DB_MYSQL: '/mysql',
     DB_POSTGRE: '/postgresql',

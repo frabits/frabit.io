@@ -61,49 +61,6 @@ const newsql = [
     { name: 'OceanBase', icon:OceanBaseIcon,recommended: false,useCase: 'Designed to handle production workloads', feature:featuresPro,href: Route.CONTACTS,notice:'Contact us'},
 ]
 
-const features = [
-    {
-        name: 'Cluster management',
-        feature: [
-            {name:'Deployment',community:true,enterprise:true,ultimate:true},
-            {name:'Add/remove node',community:true,enterprise:true,ultimate:true},
-            {name:'Load balancers',community:true,enterprise:true,ultimate:true},
-        ]
-    },
-    {
-        name: 'High availability',
-        feature: [
-            {name:'Automated failover',community:false,enterprise:true,ultimate:true},
-        ]
-    },
-    {
-        name: 'Backup & Restore',
-        feature: [
-            {name:'Full/incremental',community:true,enterprise:true,ultimate:true},
-            {name:'Restore:PITR',community:true,enterprise:true,ultimate:true},
-            {name:'Local/cloud storage',community:true,enterprise:true,ultimate:true},
-            {name:'Encryption',community:false,enterprise:true,ultimate:true},
-            {name:'Compression',community:true,enterprise:true,ultimate:true},
-            {name:'Auto-Verify',community:false,enterprise:true,ultimate:true},
-        ]
-    },
-    {
-        name: 'Security summary',
-        feature: [
-            {name:'Key management',community:true,enterprise:true,ultimate:true},
-            {name:'Audit log',community:false,enterprise:true,ultimate:true},
-        ]
-    },
-    {
-        name: 'Support',
-        feature: [
-            {name:'Community support',community:true,enterprise:true,ultimate:true},
-            {name:'Standard Support',community:false,enterprise:true,ultimate:true},
-            {name:'Premium Support',community:false,enterprise:false,ultimate:true},
-        ]
-    },
-];
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -114,11 +71,11 @@ const RemoteDBA = () =>{
             <div className="pt-10 mx-auto">
                 <div className="mx-auto py-10 max-w-6xl text-center flex flex-col items-center">
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Remote DBA and Database Management Services</h1>
-                    <div className="mt-6 text-neutral-200">Remote database administration (DBA) services from Frabit Lab provide comprehensive, high-impact results. Managing your databases remotely, the team with the world’s most well-known databases expertise will immediately apply qualified DBA manpower where and when you need it most.</div>
+                    <div className="mt-6 px-28 text-neutral-200">Remote database administration (DBA) services from Frabit Lab provide comprehensive, high-impact results. Managing your databases remotely, the team with the world’s most well-known databases expertise will immediately apply qualified DBA manpower where and when you need it most.</div>
                 </div>
-                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-10 max-w-6xl text-center flex flex-col items-center">
+                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-6 max-w-6xl text-center flex flex-col items-center">
                     <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">SQL Databases</h1>
-                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5 pb-10">
+                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5">
                         {sql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
                                 <div className="h-56 py-3">
@@ -153,9 +110,9 @@ const RemoteDBA = () =>{
                         ))}
                     </div>
                 </div>
-                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-10 max-w-6xl text-center flex flex-col items-center">
+                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-6 max-w-6xl text-center flex flex-col items-center">
                     <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NoSQL Databases</h1>
-                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5 pb-10">
+                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5">
                         {nosql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
                                 <div className="h-56 py-3">
@@ -190,9 +147,9 @@ const RemoteDBA = () =>{
                         ))}
                     </div>
                 </div>
-                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-10 max-w-6xl text-center flex flex-col items-center">
+                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-6 max-w-6xl text-center flex flex-col items-center">
                     <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NewSQL Databases</h1>
-                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5 pb-10">
+                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5">
                         {newsql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
                                 <div className="h-56 py-3">
