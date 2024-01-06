@@ -70,7 +70,7 @@ const Consulting = () =>{
         <>
             <div className="pt-10 mx-auto">
                 <div className="mx-auto py-10 max-w-6xl text-center flex flex-col items-center">
-                    <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Remote DBA and Database Management Services</h1>
+                    <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Consulting</h1>
                     <div className="mt-6 px-28 text-neutral-200">Remote database administration (DBA) services from Frabit Lab provide comprehensive, high-impact results. Managing your databases remotely, the team with the world’s most well-known databases expertise will immediately apply qualified DBA manpower where and when you need it most.</div>
                 </div>
                 <div className="flex flex-col gap-6">
