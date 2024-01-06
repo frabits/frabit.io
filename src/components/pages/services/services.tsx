@@ -34,7 +34,7 @@ const featuresSuper = [
     { name: '24h*7*365 Support', enabled:true },
 ];
 
-const plan = [
+const services = [
     { name: 'Remote DBA', icon:<UserGroupIcon />,recommended: false,useCase: 'Great for smaller workloads and starter projects', feature:featuresCommunity,href: Route.REMOTE_DBA,notice:'Learn more'},
     { name: 'Technical Support', icon:<SquaresPlusIcon />,recommended: true,useCase: 'Designed to handle production workloads', feature:featuresPro,href: Route.TECHNICAL_SUPPORT,notice:'Learn more'},
     { name: 'Consulting', icon:<ChartBarIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',feature:featuresSuper,href: Route.CONSULTING,notice:'Learn more'},
@@ -53,7 +53,7 @@ const Services = () =>{
                     <div className="mt-6 text-neutral-200">Options for every user,organization,and use case</div>
                     <div className="flex justify-center relative space-x-6 pt-8 pb-6"></div>
                     <div className="plans_container grid grid-cols-3 gap-5 pb-10">
-                        {plan.map(({ name, icon,recommended,useCase,feature,href,notice }, idx) => (
+                        {services.map(({ name, icon,recommended,useCase,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
                                 <div className="h-56 py-3">
                                     <div className="flex w-full justify-center ">
