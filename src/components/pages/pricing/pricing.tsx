@@ -1,4 +1,4 @@
-import {CheckIcon, CloudIcon, SquaresPlusIcon} from "@heroicons/react/20/solid";
+import {CheckIcon,MinusIcon, CameraIcon,Squares2X2Icon, SquaresPlusIcon} from "@heroicons/react/20/solid";
 import Route from '@/lib/route';
 import Link from "@/components/common/link";
 import ExternalIcon from "@/assets/external.inline.svg";
@@ -19,7 +19,7 @@ const featuresPro = [
     { name: 'MongoDB', enabled:true },
     { name: 'Auto Backup', enabled:true },
     { name: 'Enterprise plugin', enabled:true },
-    { name: 'High Availability and Fault Tolerance', enabled:true },
+    { name: 'High Availability', enabled:true },
     { name: '8h*5(M-F) Support', enabled:true },
 ];
 
@@ -29,14 +29,14 @@ const featuresSuper = [
     { name: 'MongoDB', enabled:true },
     { name: 'Redis', enabled:true },
     { name: 'Enterprise plugin', enabled:true },
-    { name: 'High availability and fault tolerance', enabled:true },
+    { name: 'High availability', enabled:true },
     { name: 'Custom brand', enabled:true },
     { name: '24h*7*365 Support', enabled:true },
 ];
 const plan = [
-    { name: 'Community', recommended: false,useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: Route.DOWNLOADS,notice:'Download now'},
-    { name: 'Enterprise', recommended: true,useCase: 'Designed to handle production workloads',price:'$49.9', feature:featuresPro,href: Route.CONTACTS,notice:'Request a demo'},
-    { name: 'Ultimate', recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Demo us'},
+    { name: 'Community', icon:<CameraIcon />,recommended: false,useCase: 'Great for smaller workloads and starter projects', price:'Free', feature:featuresCommunity,href: Route.DOWNLOADS,notice:'Download now'},
+    { name: 'Enterprise', icon:<Squares2X2Icon />,recommended: true,useCase: 'Designed to handle production workloads',price:'$49.9', feature:featuresPro,href: Route.CONTACTS,notice:'Request a demo'},
+    { name: 'Ultimate', icon:<SquaresPlusIcon />,recommended: false,useCase: 'Designed for the most demanding latency-sensitive workloads',price:'Customer pricing', feature:featuresSuper,href: Route.CONTACTS,notice:'Contact us'},
 ]
 
 const features = [
@@ -96,13 +96,13 @@ const Pricing = () =>{
                     {/*Cloud vendor*/}
                     <div className="flex justify-center relative space-x-6 pt-8 pb-6"></div>
                     <div className="plans_container grid grid-cols-3 gap-5 pb-10">
-                        {plan.map(({ name, recommended,useCase,price,feature,href,notice }, idx) => (
+                        {plan.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
-                                <div className={classNames(recommended?"":"","invisible bg-cyan-500 rounded-xl text-cyan-50 h-10 items-center")}>
-                                    <p className="text-center">Most people choose</p>
-                                </div>
-                                <div className="h-40 p-3">
-                                    <h2 className="w-full h-10 text-2xl font-bold tracking-wider text-cyan-50">{name}</h2>
+                                <div className="h-56 py-3">
+                                    <div className="flex w-full justify-center ">
+                                        <div className="flex w-16 text-cyan-500 text-center items-center">{icon}</div>
+                                    </div>
+                                    <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
                                     <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
                                     <div className="w-full h-15">
                                         <div className="w-full text-2xl font-bold tracking-wider text-cyan-50">{price}</div>
@@ -116,12 +116,17 @@ const Pricing = () =>{
                                         </button>
                                     </a>
                                 </div>
-                                <div className="h-80 p-5 place-content-start flex flex-col justify-start">
-                                    {feature.map(({name,enabled},idx) =>(
-                                        <div className="flex-col items-start justify-start" key={idx}>
-                                            <p className="w-full h-10 text-30 font-bold leading-none tracking-wider text-cyan-50">{name}</p>
-                                        </div>
-                                    ))}
+                                <div className="flex-auto justify-between p-6">
+                                    <div className="flex flex-col gap-3">
+                                        {feature.map(({name,enabled},idx) =>(
+                                            <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
+                                                <div className="text-cyan-50 w-4">
+                                                    <CheckIcon/>
+                                                </div>
+                                                <p className="text-30 font-bold text-cyan-50">{name}</p>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         ))}

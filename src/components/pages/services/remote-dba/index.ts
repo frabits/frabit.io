@@ -1,3 +1,3 @@
-import Remote_dba from './remote_dba'
+import RemoteDBA from './remote_dba'
 
-export default Remote_dba;
+export default RemoteDBA;
