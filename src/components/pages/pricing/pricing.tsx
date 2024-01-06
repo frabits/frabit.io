@@ -94,7 +94,6 @@ const Pricing = () =>{
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Pricing</h1>
                     <div className="mt-6 text-neutral-200">Options for every user,organization,and use case</div>
                     {/*Cloud vendor*/}
-                    <div className="flex justify-center relative space-x-6 pt-8 pb-6"></div>
                     <div className="plans_container grid grid-cols-3 gap-5 pb-10">
                         {plan.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
