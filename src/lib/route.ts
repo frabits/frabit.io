@@ -14,6 +14,8 @@ const Route = {
 
     SERVICES: '/services',
     REMOTE_DBA:'/services/remote-dba',
+    CONSULTING:'/services/consulting',
+    TECHNICAL_SUPPORT:'/services/support',
     // Support database
     DB_MYSQL: '/mysql',
     DB_POSTGRE: '/postgresql',
