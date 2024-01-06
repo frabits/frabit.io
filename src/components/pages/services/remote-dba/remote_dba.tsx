@@ -82,7 +82,7 @@ const RemoteDBA = () =>{
                                     <div className="h-56 py-3">
                                         <div className="flex w-full justify-center ">
                                             <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
-                                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                                                <Image className="flex place-self-center" alt="" width={64} height={64} src={icon} />
                                             </div>
                                         </div>
                                         <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
@@ -119,7 +119,7 @@ const RemoteDBA = () =>{
                                     <div className="h-56 py-3">
                                         <div className="flex w-full justify-center ">
                                             <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
-                                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                                                <Image className="flex place-self-center" alt="" width={64} height={64} src={icon} />
                                             </div>
                                         </div>
                                         <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
@@ -156,7 +156,7 @@ const RemoteDBA = () =>{
                                     <div className="h-56 py-3">
                                         <div className="flex w-full justify-center ">
                                             <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
-                                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                                                <Image className="flex place-self-center" alt="" width={64} height={64} src={icon} />
                                             </div>
                                         </div>
                                         <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
