@@ -47,7 +47,7 @@ export const MENU = {
         {
             name: 'Services',
             items: [
-                { name: 'Remote DBA', linkUrl: Route.CLOUD,isExternal:false },
+                { name: 'Remote DBA', linkUrl: Route.REMOTE_DBA,isExternal:false },
                 { name: 'Technical Support', linkUrl: Route.FRABIT,isExternal:false },
                 { name: 'Consulting', linkUrl: Route.FRABIT_OSS,isExternal:false },
             ],
