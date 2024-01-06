@@ -73,115 +73,117 @@ const RemoteDBA = () =>{
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Remote DBA and Database Management Services</h1>
                     <div className="mt-6 px-28 text-neutral-200">Remote database administration (DBA) services from Frabit Lab provide comprehensive, high-impact results. Managing your databases remotely, the team with the world’s most well-known databases expertise will immediately apply qualified DBA manpower where and when you need it most.</div>
                 </div>
-                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-6 max-w-6xl text-center flex flex-col items-center">
-                    <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">SQL Databases</h1>
-                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5">
-                        {sql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
-                            <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
-                                <div className="h-56 py-3">
-                                    <div className="flex w-full justify-center ">
-                                        <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
-                                            <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                <div className="flex flex-col gap-6">
+                    <div className="mx-auto rounded-xl pt-6 max-w-6xl text-center flex flex-col items-center">
+                        <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">SQL Databases</h1>
+                        <div className="rounded-xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 p-6 gap-5">
+                            {sql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
+                                <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500" key={idx}>
+                                    <div className="h-56 py-3">
+                                        <div className="flex w-full justify-center ">
+                                            <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
+                                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                                            </div>
+                                        </div>
+                                        <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
+                                        <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
+                                    </div>
+                                    <div className="h-10">
+                                        <a className={classNames(recommended?"bg-cyan-500 hover:bg-cyan-600":"","flex justify-center border-2 border-cyan-500 hover:border-cyan-600 rounded-xl p-2")} href={href}>
+                                            <button className="flex items-center">
+                                                <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="flex-auto justify-between p-6">
+                                        <div className="flex flex-col gap-3">
+                                            {feature.map(({name,enabled},idx) =>(
+                                                <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
+                                                    <div className="text-cyan-50 w-4">
+                                                        <CheckIcon/>
+                                                    </div>
+                                                    <p className="text-30 font-bold text-cyan-50">{name}</p>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
-                                    <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
-                                    <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
                                 </div>
-                                <div className="h-10">
-                                    <a className={classNames(recommended?"bg-cyan-500 hover:bg-cyan-600":"","flex justify-center border-2 border-cyan-500 hover:border-cyan-600 rounded-xl p-2")} href={href}>
-                                        <button className="flex items-center">
-                                            <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
-                                        </button>
-                                    </a>
-                                </div>
-                                <div className="flex-auto justify-between p-6">
-                                    <div className="flex flex-col gap-3">
-                                        {feature.map(({name,enabled},idx) =>(
-                                            <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
-                                                <div className="text-cyan-50 w-4">
-                                                    <CheckIcon/>
-                                                </div>
-                                                <p className="text-30 font-bold text-cyan-50">{name}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-6 max-w-6xl text-center flex flex-col items-center">
-                    <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NoSQL Databases</h1>
-                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5">
-                        {nosql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
-                            <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
-                                <div className="h-56 py-3">
-                                    <div className="flex w-full justify-center ">
-                                        <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
-                                            <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                    <div className="mx-auto rounded-xl pt-6 max-w-6xl text-center flex flex-col items-center">
+                        <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NoSQL Databases</h1>
+                        <div className="rounded-xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 p-6 gap-5">
+                            {nosql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
+                                <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500" key={idx}>
+                                    <div className="h-56 py-3">
+                                        <div className="flex w-full justify-center ">
+                                            <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
+                                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                                            </div>
+                                        </div>
+                                        <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
+                                        <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
+                                    </div>
+                                    <div className="h-10">
+                                        <a className={classNames(recommended?"bg-cyan-500 hover:bg-cyan-600":"","flex justify-center border-2 border-cyan-500 hover:border-cyan-600 rounded-xl p-2")} href={href}>
+                                            <button className="flex items-center">
+                                                <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="flex-auto justify-between p-6">
+                                        <div className="flex flex-col gap-3">
+                                            {feature.map(({name,enabled},idx) =>(
+                                                <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
+                                                    <div className="text-cyan-50 w-4">
+                                                        <CheckIcon/>
+                                                    </div>
+                                                    <p className="text-30 font-bold text-cyan-50">{name}</p>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
-                                    <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
-                                    <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
                                 </div>
-                                <div className="h-10">
-                                    <a className={classNames(recommended?"bg-cyan-500 hover:bg-cyan-600":"","flex justify-center border-2 border-cyan-500 hover:border-cyan-600 rounded-xl p-2")} href={href}>
-                                        <button className="flex items-center">
-                                            <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
-                                        </button>
-                                    </a>
-                                </div>
-                                <div className="flex-auto justify-between p-6">
-                                    <div className="flex flex-col gap-3">
-                                        {feature.map(({name,enabled},idx) =>(
-                                            <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
-                                                <div className="text-cyan-50 w-4">
-                                                    <CheckIcon/>
-                                                </div>
-                                                <p className="text-30 font-bold text-cyan-50">{name}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className="mx-auto rounded-xl border-2 gap-10 border-cyan-500 pt-6 max-w-6xl text-center flex flex-col items-center">
-                    <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NewSQL Databases</h1>
-                    <div className="bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 gap-5">
-                        {newsql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
-                            <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>
-                                <div className="h-56 py-3">
-                                    <div className="flex w-full justify-center ">
-                                        <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
-                                            <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                    <div className="mx-auto rounded-xl pt-6 max-w-6xl text-center flex flex-col items-center">
+                        <h1 className="text-3xl pb-5 font-bold tracking-tight text-cyan-50 sm:text-4xl">NewSQL Databases</h1>
+                        <div className="rounded-xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid grid-cols-4 p-6 gap-5">
+                            {newsql.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
+                                <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500" key={idx}>
+                                    <div className="h-56 py-3">
+                                        <div className="flex w-full justify-center ">
+                                            <div className="flex rounded-xl bg-cyan-50 p-5 text-cyan-500 text-center items-center">
+                                                <Image className="flex place-self-center hover:bg-cyan-800" alt="" width={64} height={64} src={icon} />
+                                            </div>
+                                        </div>
+                                        <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
+                                        <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
+                                    </div>
+                                    <div className="h-10">
+                                        <a className={classNames(recommended?"bg-cyan-500 hover:bg-cyan-600":"","flex justify-center border-2 border-cyan-500 hover:border-cyan-600 rounded-xl p-2")} href={href}>
+                                            <button className="flex items-center">
+                                                <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="flex-auto justify-between p-6">
+                                        <div className="flex flex-col gap-3">
+                                            {feature.map(({name,enabled},idx) =>(
+                                                <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
+                                                    <div className="text-cyan-50 w-4">
+                                                        <CheckIcon/>
+                                                    </div>
+                                                    <p className="text-30 font-bold text-cyan-50">{name}</p>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
-                                    <h2 className="w-full h-10 text-3xl font-bold tracking-wider text-cyan-50">{name}</h2>
-                                    <div className="w-full h-15 text-14 tracking-wider text-slate-300">{useCase}</div>
                                 </div>
-                                <div className="h-10">
-                                    <a className={classNames(recommended?"bg-cyan-500 hover:bg-cyan-600":"","flex justify-center border-2 border-cyan-500 hover:border-cyan-600 rounded-xl p-2")} href={href}>
-                                        <button className="flex items-center">
-                                            <p className="items-center whitespace-nowrap text-center text-cyan-50 text-sm">{notice}</p>
-                                        </button>
-                                    </a>
-                                </div>
-                                <div className="flex-auto justify-between p-6">
-                                    <div className="flex flex-col gap-3">
-                                        {feature.map(({name,enabled},idx) =>(
-                                            <div className="row flex items-center justify-start gap-4 text-sm" key={idx}>
-                                                <div className="text-cyan-50 w-4">
-                                                    <CheckIcon/>
-                                                </div>
-                                                <p className="text-30 font-bold text-cyan-50">{name}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
