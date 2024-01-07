@@ -16,22 +16,22 @@ const Download = {
     CheckSum:'/v{version}/checksum.txt',
     MacOS: [
         {
-            format: 'tar', arch: [{name: 'amd64', pkg:[{comp:'frabit-platform',href: "/v{version}/frabit_{version}_darwin_amd64.tar.gz"}]},
+            format: 'tar.gz', arch: [{name: 'amd64', pkg:[{comp:'frabit-platform',href: "/v{version}/frabit_{version}_darwin_amd64.tar.gz"}]},
                                   {name: 'arm64', pkg:[{comp:'frabit-platform',href: "/v{version}/frabit_{version}_darwin_arm64.tar.gz"}]}
             ]
         },
     ],
     Linux: [
         {
-            format: 'tar', arch: [{name: 'amd64', pkg:[{comp:'frabit-platform',href: "/v{version}/frabit_{version}_linux_amd64.tar.gz"}]},
+            format: 'tar.gz', arch: [{name: 'amd64', pkg:[{comp:'frabit-platform',href: "/v{version}/frabit_{version}_linux_amd64.tar.gz"}]},
                                   {name: 'arm64', pkg:[{comp:'frabit-platform',href: "/v{version}/frabit_{version}_linux_arm64.tar.gz"}]}
             ]
         },
         {
-            format: 'rpm', arch: [{name: 'amd64', pkg:[{comp:'frabit-server',href: "/v{version}/frabit-server-{version}.x86_64.rpm"},
+            format: 'rpm', arch: [{name: 'x86_64', pkg:[{comp:'frabit-server',href: "/v{version}/frabit-server-{version}.x86_64.rpm"},
                                                        {comp:'frabit-agent',href: "/v{version}/frabit-agent-{version}.x86_64.rpm"}]
                                   },
-                                  {name: 'arm64', pkg:[{comp:'frabit-server',href: "/v{version}/frabit-server-{version}.aarch64.rpm"},
+                                  {name: 'aarch64', pkg:[{comp:'frabit-server',href: "/v{version}/frabit-server-{version}.aarch64.rpm"},
                                                        {comp:'frabit-agent',href: "/v{version}/frabit-agent-{version}.aarch64.rpm"}]
                                   },
             ]
@@ -48,17 +48,36 @@ const Download = {
     ],
 };
 
-function getPackageURL(version: string, url: string) {
-    return Download_URL+`${url}`;
+// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit-agent-2.2.1.aarch64.rpm
+// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit_2.2.1_darwin_amd64.tar.gz
+// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit_2.2.1_linux_amd64.tar.gz
+// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit-platform_2.2.1_amd64.tar.gz
+// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit-server_2.2.1_amd64.deb
+// version name arch format
+function getPackageURL(platform:string,version: string, name: string, arch: string,format:string) {
+    const version_num = version.replace('v', '');
+    console.log(platform)
+    if (`${format}` === "tar.gz"){
+        if (`${platform}` === "Linux"){
+            return `${Download_URL}/v${version_num}/frabit_${version_num}_linux_${arch}.${format}`;
+        }else{
+            return `${Download_URL}/v${version_num}/frabit_${version_num}_darwin_${arch}.${format}`;
+        }
+    } else if (`${format}` === "rpm"){
+        return `${Download_URL}/v${version_num}/${name}-${version_num}.${format}.${arch}`;
+    } else {
+        return `${Download_URL}/v${version_num}/${name}_${version_num}_${format}.${arch}`;
+    }
 }
 
 const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => {
+    const checkSumURL = `${Download_URL}/${version}/checksum.txt`
     return (
         <>
             <div className="isolate p-6 w-full">
                 <div className="pb-6">
                     <p className="text-14 font-bold leading-none tracking-wider text-cyan-50">{version}/{releaseDate}
-                        <a className="text-cyan-500 hover:text-cyan-600 p-5" href={Download.CheckSum}>CheckSum</a>
+                        <a className="text-cyan-500 hover:text-cyan-600 p-5" href={checkSumURL}>CheckSum</a>
                     </p>
                 </div>
                 <div className="grid grid-cols h-50 gap-5">
@@ -79,7 +98,7 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                                             <div className="gap-3 p-2">
                                                 {pkg.map(({comp,href},idx) =>(
                                                     <div className="rounded-lg border-2 border-double border-cyan-500 p-2 gap-3" key={idx}>
-                                                        <a className="gap-3" href={href}>{comp}-{name}</a>
+                                                        <a className="gap-3" href={getPackageURL("Linux",version,comp,format,name)}>{comp}-{name}</a>
                                                     </div>
                                                 ))}
                                             </div>
@@ -105,7 +124,7 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                                                 <div className="gap-3 p-2">
                                                     {pkg.map(({comp,href},idx) =>(
                                                         <div className="rounded-lg  border-2 h-15 border-double border-cyan-500 p-2 gap-3" key={idx}>
-                                                            <a className="gap-3" href={href}>{comp}-{name}</a>
+                                                            <a className="gap-3" href={getPackageURL("MacOS",version,comp,format,name)}>{comp}-{name}</a>
                                                         </div>
                                                     ))}
 
