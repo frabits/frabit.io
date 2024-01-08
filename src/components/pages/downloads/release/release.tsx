@@ -97,7 +97,7 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                                         <div className="flex col-span-1 gap-3" key={idx}>
                                             <div className="gap-3 p-2">
                                                 {pkg.map(({comp,href},idx) =>(
-                                                    <div className="rounded-lg w-60 border-2 border-double border-cyan-500 p-2 gap-3" key={idx}>
+                                                    <div className="rounded-lg w-60 border-2 border-cyan-500 p-2 gap-3" key={idx}>
                                                         <a className="gap-3" href={getPackageURL("Linux",version,comp,name,format)}>{comp}-{name}</a>
                                                     </div>
                                                 ))}
@@ -123,7 +123,7 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                                             <div className="flex col-span-1 gap-3" key={idx}>
                                                 <div className="gap-3 p-2">
                                                     {pkg.map(({comp,href},idx) =>(
-                                                        <div className="rounded-lg  w-60 border-2 h-15 border-double border-cyan-500 p-2 gap-3" key={idx}>
+                                                        <div className="rounded-lg  w-60 border-2 h-15 border-cyan-500 p-2 gap-3" key={idx}>
                                                             <a className="gap-3" href={getPackageURL("MacOS",version,comp,name,format)}>{comp}-{name}</a>
                                                         </div>
                                                     ))}
