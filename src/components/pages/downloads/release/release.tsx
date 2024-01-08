@@ -48,15 +48,8 @@ const Download = {
     ],
 };
 
-// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit-agent-2.2.1.aarch64.rpm
-// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit_2.2.1_darwin_amd64.tar.gz
-// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit_2.2.1_linux_amd64.tar.gz
-// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit-platform_2.2.1_amd64.tar.gz
-// https://github.com/frabits/frabit/releases/download/v2.2.1/frabit-server_2.2.1_amd64.deb
-// version name arch format
 function getPackageURL(platform:string,version: string, name: string, arch: string,format:string) {
     const version_num = version.replace('v', '');
-    console.log(platform,format)
     if (format == "tar.gz"){
         if (platform == "Linux"){
             return `${Download_URL}/v${version_num}/frabit_${version_num}_linux_${arch}.${format}`;
