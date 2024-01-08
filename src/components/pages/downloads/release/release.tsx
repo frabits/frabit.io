@@ -56,17 +56,17 @@ const Download = {
 // version name arch format
 function getPackageURL(platform:string,version: string, name: string, arch: string,format:string) {
     const version_num = version.replace('v', '');
-    console.log(platform)
-    if (`${format}` === "tar.gz"){
-        if (`${platform}` === "Linux"){
+    console.log(platform,format)
+    if (format == "tar.gz"){
+        if (platform == "Linux"){
             return `${Download_URL}/v${version_num}/frabit_${version_num}_linux_${arch}.${format}`;
         }else{
             return `${Download_URL}/v${version_num}/frabit_${version_num}_darwin_${arch}.${format}`;
         }
-    } else if (`${format}` === "rpm"){
-        return `${Download_URL}/v${version_num}/${name}-${version_num}.${format}.${arch}`;
+    } else if (format == "rpm"){
+        return `${Download_URL}/v${version_num}/${name}-${version_num}.${arch}.${format}`;
     } else {
-        return `${Download_URL}/v${version_num}/${name}_${version_num}_${format}.${arch}`;
+        return `${Download_URL}/v${version_num}/${name}_${version_num}_${arch}.${format}`;
     }
 }
 
@@ -97,8 +97,8 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                                         <div className="flex col-span-1 gap-3" key={idx}>
                                             <div className="gap-3 p-2">
                                                 {pkg.map(({comp,href},idx) =>(
-                                                    <div className="rounded-lg border-2 border-double border-cyan-500 p-2 gap-3" key={idx}>
-                                                        <a className="gap-3" href={getPackageURL("Linux",version,comp,format,name)}>{comp}-{name}</a>
+                                                    <div className="rounded-lg w-60 border-2 border-double border-cyan-500 p-2 gap-3" key={idx}>
+                                                        <a className="gap-3" href={getPackageURL("Linux",version,comp,name,format)}>{comp}-{name}</a>
                                                     </div>
                                                 ))}
                                             </div>
@@ -123,11 +123,10 @@ const  Release = ({version,releaseDate}:{version:string;releaseDate:string}) => 
                                             <div className="flex col-span-1 gap-3" key={idx}>
                                                 <div className="gap-3 p-2">
                                                     {pkg.map(({comp,href},idx) =>(
-                                                        <div className="rounded-lg  border-2 h-15 border-double border-cyan-500 p-2 gap-3" key={idx}>
-                                                            <a className="gap-3" href={getPackageURL("MacOS",version,comp,format,name)}>{comp}-{name}</a>
+                                                        <div className="rounded-lg  w-60 border-2 h-15 border-double border-cyan-500 p-2 gap-3" key={idx}>
+                                                            <a className="gap-3" href={getPackageURL("MacOS",version,comp,name,format)}>{comp}-{name}</a>
                                                         </div>
                                                     ))}
-
                                                 </div>
                                             </div>
                                         ))}
