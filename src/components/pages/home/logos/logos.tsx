@@ -86,11 +86,20 @@ const Logos = () =>{
                 <div className="bg-cyan-500 place-items-center items-center justify-center text-center text-base w-full pb-10">
                     <p className="mb-4 text-3xl text-cyan-50 pb-10">Trusted by developers and DBAs that work with databases</p>
                     <div className="grid justify-items-center">
-                        <div className="section-container relative z-10 flex max-w-5xl flex-wrap gap-3  md:gap-x-14">
-                            <div className="absolute left-0 z-10 h-full bg-homepageFadeLeftLogos p-10 lg:pr-20"></div>
-                            <div className="absolute right-0 z-10 h-full bg-homepageFadeRightLogos p-10 lg:pl-20"></div>
+                        <div className="section-container relative z-10 flex max-w-5xl flex-wrap place-items-center items-center justify-center gap-6 self-center md:gap-x-14">
+                            <div className="absolute left-0 z-10 h-full  p-10 lg:pr-20"></div>
+                            <div className="absolute right-0 z-10 h-full p-10 lg:pl-20"></div>
                             <div className="pause-hover hide-scrollbar relative flex overflow-x-scroll md:overflow-x-hidden">
-                                <div className="flex content-center items-center whitespace-nowrap py-3 animate-marqueeLeft">
+                                <div className="flex content-center items-center whitespace-nowrap py-3 animate-carousel">
+                                    {logos1.map((logo, idx) => (
+                                        <div className="w-30 pr-5 pl-5" key={idx}>
+                                            <a className="flex items-center" href={logo.href}>
+                                                <img src={logo.logoUrl} alt="" className="" />
+                                            </a>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="absolute top-0 flex items-center whitespace-nowrap py-3 animate-carousel">
                                     {logos1.map((logo, idx) => (
                                         <div className="w-30 pr-5 pl-5" key={idx}>
                                             <a className="flex items-center" href={logo.href}>
@@ -101,7 +110,16 @@ const Logos = () =>{
                                 </div>
                             </div>
                             <div className="pause-hover hide-scrollbar relative flex overflow-x-scroll md:overflow-x-hidden">
-                                <div className="flex content-center items-center whitespace-nowrap py-3 animate-marqueeLeft">
+                                <div className="flex content-center items-center whitespace-nowrap py-3 animate-carousel">
+                                    {logos2.map((logo, idx) => (
+                                        <div className="w-30 pr-5 pl-5" key={idx}>
+                                            <a className="flex items-center" href={logo.href}>
+                                                <img src={logo.logoUrl} alt="" className="" />
+                                            </a>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="absolute top-0 flex items-center whitespace-nowrap py-3 animate-carousel">
                                     {logos2.map((logo, idx) => (
                                         <div className="w-30 pr-5 pl-5" key={idx}>
                                             <a className="flex items-center" href={logo.href}>
