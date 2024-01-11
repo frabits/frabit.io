@@ -11,7 +11,6 @@ const Route = {
     RELEASE_NOTES: '/release-notes',
 
     // Services
-
     SERVICES: '/services',
     REMOTE_DBA:'/services/remote-dba',
     CONSULTING:'/services/consulting',
@@ -28,7 +27,7 @@ const Route = {
     SUPPORT: '/support',
     FRABIT_OSS: '/products/community',
     FRABIT: '/products/enterprise',
-    CLOUD: '/products/cloud',
+    ULTIMATE: '/products/ultimate',
 
     // Integrations
     INTE_GITHUB: '/github',
