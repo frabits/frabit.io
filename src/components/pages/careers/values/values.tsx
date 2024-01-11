@@ -11,7 +11,7 @@ const Values = [
     },
     {
         name: 'Remote and flexible',
-        desc: 'We’re a remote cloud, with a flexible work-from-anywhere policy. We work in small product oriented teams to focus & execute faster. We don’t track working hours, what matters is what you get done.',
+        desc: 'We’re a remote ultimate, with a flexible work-from-anywhere policy. We work in small product oriented teams to focus & execute faster. We don’t track working hours, what matters is what you get done.',
         imageUrl: '/images/page/careers/remote.svg',
     },
     {

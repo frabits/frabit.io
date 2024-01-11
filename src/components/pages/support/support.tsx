@@ -12,7 +12,7 @@ import Route from '@/lib/route';
 
 const plan = [
     { name: 'Frabit Community', useCase: 'Small teams', price:'Free', href: '#'},
-    { name: 'Frabit Enterprise', useCase: 'Frabit cloud version that fully ',price:'Free', href: '#'},
+    { name: 'Frabit Enterprise', useCase: 'Frabit ultimate version that fully ',price:'Free', href: '#'},
     { name: 'Frabit Cloud', useCase: 'The next-gen database automatic operation platform',price:'Free', href: '#'},
 ]
 
@@ -38,7 +38,7 @@ const Support = () =>{
                 <div className="mx-auto pt-10 max-w-2xl text-center">
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Support Center</h1>
                     <div className="mt-6 font-bold text-xl text-neutral-200">Trusted support services for your organization</div>
-                    {/*Cloud vendor*/}
+                    {/*Ultimate vendor*/}
                     <div className="flex justify-center relative text-cyan-50 space-x-6 pt-8 pb-6">
                         Here at Frabit Labs, best-in-class support comes with your Cloud subscription. Our Support Services team follows the same vision as our product, bringing you unparalleled performance, ease of use, and exceptionally fast, high-quality results.
                     </div>

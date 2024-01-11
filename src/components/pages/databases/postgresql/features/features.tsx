@@ -23,7 +23,7 @@ const features = [
         feature: [
             {name:'Full/incremental',enable:true},
             {name:'Restore:PITR',enable:true},
-            {name:'Local/cloud storage',enable:true},
+            {name:'Local/ultimate storage',enable:true},
             {name:'Encryption',enable:true},
             {name:'Compression',enable:true},
         ]

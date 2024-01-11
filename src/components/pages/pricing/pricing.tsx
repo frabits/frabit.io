@@ -59,7 +59,7 @@ const features = [
         feature: [
             {name:'Full/incremental',community:true,enterprise:true,ultimate:true},
             {name:'Restore:PITR',community:true,enterprise:true,ultimate:true},
-            {name:'Local/cloud storage',community:true,enterprise:true,ultimate:true},
+            {name:'Local/ultimate storage',community:true,enterprise:true,ultimate:true},
             {name:'Encryption',community:false,enterprise:true,ultimate:true},
             {name:'Compression',community:true,enterprise:true,ultimate:true},
             {name:'Auto-Verify',community:false,enterprise:true,ultimate:true},
@@ -93,7 +93,7 @@ const Pricing = () =>{
                 <div className="mx-auto pt-10 max-w-6xl text-center flex flex-col items-center">
                     <h1 className="text-3xl font-bold tracking-tight text-cyan-50 sm:text-4xl">Pricing</h1>
                     <div className="mt-6 text-neutral-200">Options for every user,organization,and use case</div>
-                    {/*Cloud vendor*/}
+                    {/*Ultimate vendor*/}
                     <div className="plans_container grid grid-cols-3 gap-5 pb-10">
                         {plan.map(({ name, icon,recommended,useCase,price,feature,href,notice }, idx) => (
                             <div className="col-span-1 border-t-8 border-b-8 border-r-2 border-l-2 rounded-2xl border-cyan-500 p-5" key={idx}>

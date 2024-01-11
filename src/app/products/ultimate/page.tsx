@@ -1,10 +1,10 @@
-import Cloud from '@/components/pages/products/cloud';
+import Ultimate from '@/components/pages/products/ultimate';
 
 const Page = () => {
     return (
         <>
             <h1 className="sr-only">Support database</h1>
-            <Cloud />
+            <Ultimate />
         </>
     );
 };

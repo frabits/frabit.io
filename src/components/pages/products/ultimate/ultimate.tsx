@@ -22,7 +22,7 @@ const Dist = [
     },
 ]
 
-const Cloud = () => {
+const Ultimate = () => {
     return (
         <>
             <div className="py-14">
@@ -68,4 +68,4 @@ const Cloud = () => {
     );
 };
 
-export default Cloud;
+export default Ultimate;
