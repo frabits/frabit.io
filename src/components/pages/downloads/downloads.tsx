@@ -1,5 +1,7 @@
 'use client'
 import React, {useEffect, useState} from 'react'
+import Image from 'next/image';
+
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 import getMetadata from '@/utils/get-metadata';
@@ -9,7 +11,8 @@ import {GithubLatestRelease} from '@/types/releaseGithub';
 import Banner from "@/components/common/banner";
 import {MENU} from "@/lib/menus";
 import Link from "@/components/common/link";
-import ExternalIcon from "@/assets/external.inline.svg";
+import PythonIcon from "@/assets/python.svg";
+import GolangIcon from "@/assets/golang.svg";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import SEO_DATA from '@/lib/seo-data';
 
@@ -17,6 +20,11 @@ export const metadata = getMetadata(SEO_DATA.DOWNLOADS);
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
+
+const sdks = [
+    { name: 'python', use_case: 'Integrate with Python application', icon:PythonIcon, href: 'https://github.com/frabits/frabit-py-sdk'},
+    { name: 'golang', use_case: 'Integrate with Golang application',icon:GolangIcon, href: 'https://github.com/frabits/frabit-go-sdk'},
+]
 
 const Release_API='https://api.github.com/repos/frabits/frabit/releases/latest';
 
@@ -91,6 +99,32 @@ const  Downloads = () => {
                         </svg>
                     </button>
                 </CopyToClipboard>
+            </div>
+        </div>
+        <div className="col-span-1 rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid place-items-center p-5 w-full text-cyan-50 px-32 py-3">
+            <span className="text-cyan-60 text-3xl font-bold">SDKs</span>
+            <p className="mt-2 text-lg leading-8 text-center text-cyan-50 px-32">
+                Integrate with your exist workflow via our SDKs. Currently, we provide Golang and Python SDK,for another language,you can use our open api directly.
+            </p>
+            <div className="rounded-xl p-4 flex place-items-center gap-28">
+                {sdks.map(({name,use_case,icon,href}, idx) => (
+                    <div className="rounded-lg  place-items-center p-2 gap-3" key={idx}>
+                        <div className="place-self-center">
+                            <a className="w-20 h-20  rounded-lg grid p-2 border-2 border-cyan-500"
+                               key={idx}
+                               href={href}
+                               rel="noopener noreferrer"
+                               target="_blank">
+                                <div className="flex items-center rounded-md">
+                                    <Image className="flex justify-center place-self-center " alt="" width={128} height={128} src={icon} />
+                                </div>
+                            </a>
+                        </div>
+                        <div className="place-self-center">
+                            <p className="pt-5 text-14 font-bold text-center leading-none tracking-wider text-cyan-50">{use_case}</p>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     </div>

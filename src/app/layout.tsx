@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <div className='relative bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 flex min-h-screen flex-col'>
           <Header />
-          <main className='relative'>{children}</main>
+          <main className=''><div className="overscroll-y-auto">{children}</div></main>
           <Footer />
         </div>
       </body>

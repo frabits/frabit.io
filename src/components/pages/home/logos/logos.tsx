@@ -76,6 +76,19 @@ const logos2 = [
     },
 ];
 
+const logos3 = [
+    {
+        name: 'miotech',
+        logoUrl: '/images/logos/miotech.svg',
+        href: "#",
+    },
+    {
+        name: 'kakao',
+        logoUrl: '/images/logos/kakao.svg',
+        href: "#",
+    },
+];
+
 const Logos = () =>{
     return (
         <div>
