@@ -22,8 +22,8 @@ function classNames(...classes) {
 }
 
 const sdks = [
-    { name: 'python', use_case: 'Integrate with Python application', icon:PythonIcon, href: 'https://github.com/frabits/frabit-py-sdk'},
-    { name: 'golang', use_case: 'Integrate with Golang application',icon:GolangIcon, href: 'https://github.com/frabits/frabit-go-sdk'},
+    { name: 'python', use_case: 'Integrate with Python applications', icon:PythonIcon, href: 'https://github.com/frabits/frabit-py-sdk'},
+    { name: 'golang', use_case: 'Integrate with Golang applications',icon:GolangIcon, href: 'https://github.com/frabits/frabit-go-sdk'},
 ]
 
 const Release_API='https://api.github.com/repos/frabits/frabit/releases/latest';
@@ -104,11 +104,11 @@ const  Downloads = () => {
         <div className="col-span-1 rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 grid place-items-center p-5 w-full text-cyan-50 px-32 py-3">
             <span className="text-cyan-60 text-3xl font-bold">SDKs</span>
             <p className="mt-2 text-lg leading-8 text-center text-cyan-50 px-32">
-                Integrate with your exist workflow via our SDKs. Currently, we provide Golang and Python SDK,for another language,you can use our open api directly.
+                Integrate with your exist workflow via our SDKs. Currently, we provide Golang and Python SDK,for another language,you can use our OpenAPI directly.
             </p>
-            <div className="rounded-xl p-4 flex place-items-center gap-28">
+            <div className="rounded-xl  p-4 flex place-items-center gap-28">
                 {sdks.map(({name,use_case,icon,href}, idx) => (
-                    <div className="rounded-lg  place-items-center p-2 gap-3" key={idx}>
+                    <div className="rounded-3xl bg-gradient-to-r from-cyan-900 via-zinc-800 to-cyan-900 flex flex-col place-items-center p-8 gap-3" key={idx}>
                         <div className="place-self-center">
                             <a className="w-20 h-20  rounded-lg grid p-2 border-2 border-cyan-500"
                                key={idx}
